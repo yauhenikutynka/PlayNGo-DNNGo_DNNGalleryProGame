@@ -1,0 +1,886 @@
+
+    #set( $PictureLinkType          = ${xf.ViewSliderSetting($SliderItem,"VideoType","Link")}             )
+    #set($RelationSliders = ${xf.GetRelations($SliderItem)})
+  
+<div class="detail_box">
+            <div class="main_head" style="background-image: url(${xf.PictureUrl($SliderItem,"BackDrop","")});">
+                #if(${xf.ViewSliderSetting($SliderItem,"MainLogo","")} != "")
+                <div class="detail_img">
+                <img src="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"MainLogo","")})}" alt="${xf.ViewSliderSetting($SliderItem,"Title","")}" title="${xf.ViewSliderSetting($SliderItem,"Title","")}">
+                </div>
+                 #end
+
+                #if(${xf.ViewSliderSetting($SliderItem,"Description","")} != "")
+                <p>${xf.ViewSliderSetting($SliderItem,"Description","")}</p>
+                #end
+                
+                    <a class="dg-btn-1 game_type_btn btn-accent radius-3px" data-type="${xf.ViewSliderSetting($SliderItem,"tablet","mobile")}" href="javascript://" data-effect="mfp-zoom-in" title="${xf.ViewSliderSetting($SliderItem,"GameLinkButtonName","")}">${xf.ViewSliderSetting($SliderItem,"GameLinkButtonName","")}</a>
+                
+                
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center icon_box_line">
+                            <div class="dg-line12"><span class="plus"></span></div>
+                            <h2 class="detail_title">GAME DETAILS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 leftbox">
+                        <h3 class="detail_title">GAME DESCRIPTION</h3>
+                        <div class="summary">${xf.ViewSliderSetting($SliderItem,"Summary","")}</div>
+                                
+                            #if( $PictureLinkType == "HTML5 Video")
+                                #if(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")} !="" ||${xf.ViewSliderSetting($SliderItem,"HTMLOGG","")} !="" ||${xf.ViewSliderSetting($SliderItem,"HTMLWEBM","")} !="" )
+                            <a class="dg-btn-1 btn-accent radius-3px desktop_btn paly_html5_video" target="_blank" data-mp4="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")})}" data-ogg="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLOGG","")})}" data-webm="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLWEBM","")})}" href="#" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                                #end
+                            #elseif($PictureLinkType == "YouTube Video")
+                                #if(${xf.ViewSliderSetting($SliderItem,"YoutubeId","")} !="")
+                            <a class="dg-btn-1 btn-accent radius-3px desktop_btn prolight_youtube" href="http://www.youtube.com/watch?v=${xf.ViewSliderSetting($SliderItem,"YoutubeId","")}" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                                #end
+                            #elseif($PictureLinkType == "Vimeo Video")
+                                #if(${xf.ViewSliderSetting($SliderItem,"VimeoId","")} !="")
+                            <a class="dg-btn-1 btn-accent radius-3px desktop_btn prolight_vimeo" href="https://vimeo.com/${xf.ViewSliderSetting($SliderItem,"VimeoId","")}" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                                #end
+                            #end
+                        
+                 
+                #if( $PictureLinkType == "HTML5 Video")
+                           #if(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")} !="")
+                      <a class="dg-btn-1 btn-accent radius-3px mobile_btn" target="_blank" href="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")})}" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                       #end
+                  #elseif($PictureLinkType == "YouTube Video")
+                        #if(${xf.ViewSliderSetting($SliderItem,"YoutubeId","")} !="")
+                       <a class="dg-btn-1 btn-accent radius-3px mobile_btn" target="_blank" href="http://www.youtube.com/watch?v=${xf.ViewSliderSetting($SliderItem,"YoutubeId","")}" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                       #end
+                  #elseif($PictureLinkType == "Vimeo Video")
+                        #if(${xf.ViewSliderSetting($SliderItem,"VimeoId","")} !="")
+                      <a class="dg-btn-1 btn-accent radius-3px mobile_btn" target="_blank" href="https://vimeo.com/${xf.ViewSliderSetting($SliderItem,"VimeoId","")}" title="${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"VideoButtonName","")}</a>
+                      #end
+                  #end
+            
+
+
+        #if(${xf.ViewSliderSetting($SliderItem,"DownloadableFile","")} != "")
+        <a class="dg-btn-2 btn-accent radius-3px" target="_blank" href="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"DownloadableFile","")})}" title="${xf.ViewSliderSetting($SliderItem,"DownloadVideoButtonName","")}">${xf.ViewSliderSetting($SliderItem,"DownloadVideoButtonName","")}</a>
+        #end
+       
+
+                    </div>
+                    <div class="col-sm-6 rightbox">
+                        <h3 class="detail_title ml-80">GAME SPECIFICATIONS</h3>
+                        <ul class="playgame_attribute">
+                        #if(${xf.ViewSliderSetting($SliderItem,"Title","")} != "")
+                        <li>
+                            <div class="label"><span>Game name</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"Title","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"GameType","")} != "")
+                        <li>
+                            <div class="label"><span>Game type</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"GameType","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"Lines","")} != "")
+                        <li>
+                            <div class="label"><span>Paylines</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"Lines","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"RTP","")} != "")
+                        <li>
+                            <div class="label"><span>RTP</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"RTP","")}%</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"Volatility","")} != "")
+                         <li>
+                            <div class="label"><span>Volatility</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"Volatility","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"MaxWinExposure","")} != "")
+                         <li>
+                            <div class="label"><span>Max win exposure</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"MaxWinExposure","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"Mobile","")} != "")
+                          <li>
+                            <div class="label"><span>Mobile</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"Mobile","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"GameResolution","")} != "")
+                        <li>
+                            <div class="label"><span>Game resolution</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"GameResolution","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"SupportedPlatform","")} != "")
+                        <li class="font_icon">
+                            <div class="label"><span>Supported Platform</span></div>
+                            <div class="label_name">
+                           #set($SupportedPlatforms = ${xf.ViewSliderSetting($SliderItem,"SupportedPlatform","")}) 
+                            #if($SupportedPlatforms.IndexOf("Desktop") >= 0)
+                            <span class="fa fa-desktop"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("Laptop") >= 0)
+        
+                            <span class="fa fa-laptop"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("Tablet") >= 0)
+                            <span class="fa fa-tablet"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("Mobile") >= 0)
+                            <span class="fa fa-mobile"></span>
+                            #end
+                            </div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"RecommendedBrowser","")} != "")
+                         <li class="font_icon">
+                            <div class="label"><span>Recommended browser</span></div>
+                            <div class="label_name">
+                            #set($RecommendedBrowsers = ${xf.ViewSliderSetting($SliderItem,"RecommendedBrowser","")})
+                            #if($RecommendedBrowsers.IndexOf("Safari") >= 0)
+                            <span class="fa fa-safari"></span>
+                            #end
+                            #if($RecommendedBrowsers.IndexOf("Google Chrome") >= 0)
+                            <span class="fa fa-chrome"></span>
+                            #end
+                            #if($RecommendedBrowsers.IndexOf("Mozilla Firefox") >= 0)
+                            <span class="fa fa-firefox"></span>
+                            #end
+                            #if($RecommendedBrowsers.IndexOf("Microsoft Edge") >= 0)
+                            <span class="fa fa-edge"></span>
+                            #end
+                            #if($RecommendedBrowsers.IndexOf("Internet Explorer") >= 0)
+                            <span class="fa fa-internet-explorer"></span>
+                            #end
+                            </div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"Jurisdictions","")} != "")
+                          <li>
+                            <div class="label"><span>Jurisdictions</span></div>
+                            <div class="label_name">${xf.ViewSliderSetting($SliderItem,"Jurisdictions","")}</div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"SupportedOs","")} != "")
+                          <li class="font_icon">
+                            <div class="label"><span>Supported OS</span></div>
+                            <div class="label_name">
+                            #set($SupportedOss = ${xf.ViewSliderSetting($SliderItem,"SupportedOs","")})
+                             #if($SupportedOss.IndexOf("Microsoft Windows") >= 0)
+                            <span class="fa fa-windows"></span>
+                            #end
+                            #if($SupportedOss.IndexOf("macOS") >= 0)
+                            <span class="fa fa-apple"></span>
+                            #end
+                            #if($SupportedOss.IndexOf("Linux") >= 0)
+                            <span class="fa fa-linux"></span>
+                            #end
+                            #if($SupportedOss.IndexOf("Android") >= 0)
+                            <span class="fa fa-android"></span>
+                            #end
+                            </div>
+                        </li>
+                        #end
+                         #if(${xf.ViewSliderSetting($SliderItem,"Languages","")} != "")
+                         <li>
+                            <div class="label"><span>Languages</span></div>
+                            <div class="label_name clearfix">
+                            #set($Languagess = ${xf.ViewSliderSetting($SliderItem,"Languages","")})
+                            #if($Languagess.IndexOf("BG") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-bg" title="BG" id="BG"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("ES") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-es" title="ES" id="ES"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("CN") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-cn" title="CN" id="CN"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("TW") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-tw" title="TW" id="TW"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("HR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-hr" title="HR" id="HR"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("CZ") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-cz" title="CZ" id="CZ"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("DK") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-dk" title="DK" id="DK"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("NL") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-nl" title="NL" id="NL"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("EN") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-us" title="EN" id="EN"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("EE") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-ee" title="EE" id="EE"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("FI") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-fi" title="FI" id="FI"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("FR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-fr" title="FR" id="FR"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("DE") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-de" title="DE" id="DE"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("GR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-gr" title="GR" id="GR"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("HU") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-hu" title="HU" id="HU"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("IS") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-is" title="IS" id="IS"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("ID") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-id" title="ID" id="ID"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("IT") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-it" title="IT" id="IT"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("JP") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-jp" title="JP" id="JP"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("KR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-kr" title="KR" id="KR"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("LV") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-lv" title="LV" id="LV"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("LT") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-lt" title="LT" id="LT"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("MY") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-my" title="MY" id="MY"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("NO") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-no" title="NO" id="NO"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("PL") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-pl" title="PL" id="PL"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("BR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-br" title="BR" id="BR"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("PT") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-pt" title="PT" id="PT"></div></div>
+                            #end
+                             #if($Languagess.IndexOf("RO") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-ro" title="RO" id="RO"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("RU") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-ru" title="RU" id="RU"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("SK") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-sk" title="SK" id="SK"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("SI") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-si" title="SI" id="SI"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("ES") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-es" title="ES" id="ES"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("PE") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-pe" title="PE" id="PE"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("SE") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-se" title="SE" id="SE"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("TH") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-th" title="TH" id="TH"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("TR") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-tr" title="TR" id="TR"></div></div>
+                            #end
+                            #if($Languagess.IndexOf("VN") >= 0)
+                            <div class="flag-wrapper"><div class="flag flag-icon-background flag-icon-vn" title="VN" id="VN"></div></div>
+                            #end
+                            
+                         
+                         
+                            </div>
+                        </li>
+                        #end
+                        #if(${xf.ViewSliderSetting($SliderItem,"GameRegulators","")} != "")
+                        <li class="font_icon logolist">
+                            <div class="label"><span>Game Regulators</span></div>
+                            <div class="label_name">
+                           #set($SupportedPlatforms = ${xf.ViewSliderSetting($SliderItem,"GameRegulators","")}) 
+                            #if($SupportedPlatforms.IndexOf("aams") >= 0)
+                            <span class="aamslogo"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("agcc") >= 0)
+                            <span class="agcclogo"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("dga") >= 0)
+                            <span class="dgalogo"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("lga") >= 0)
+                            <span class="mgalogo"></span>
+                            #end
+                            #if($SupportedPlatforms.IndexOf("ukgc") >= 0)
+                            <span class="ukgclogo"></span>
+                            #end
+                            </div>
+                        </li>
+                        #end
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            #if($LayerList.Count >0)
+            <div class="container text-center icon_box_line">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="dg-line12"><span class="plus"></span></div>
+                            <h2 class="detail_title">GAME FEATURES</h2>
+                        </div>
+                    </div>
+                </div>
+             
+            <div class="container">
+                <div class="gamefeatures">
+                
+                        <div class="photo_list new-carousel">
+                                <ul class="pro-img-list numbercolumns-3 $ThemeName"  id="pro-img-list${ModuleID}">
+                                    #foreach($LayerItem in $LayerList)
+                                    <li><div class="pro-photo"><a href="${xf.PictureUrl($LayerItem,"Picture","http://")}" class="prolight_image_gallery${ModuleID}" title="${xf.ViewLayerSetting($LayerItem,"Title","")}" data-effect="${xf.ViewXmlSetting("lightboxanimation","mfp-zoom-in")}"><img src="${xf.PictureUrl($LayerItem,"Picture","")}" alt="${xf.ViewLayerSetting($LayerItem,"Title","")}"  title="${xf.ViewLayerSetting($LayerItem,"Title","")}"/>
+                                    <span>${xf.ViewLayerSetting($LayerItem,"Title","")}</span>
+                                    </a></div></li>
+                                    #end
+                                </ul>     
+                        </div>
+                
+                </div>
+               
+            </div>
+            #end
+            
+      
+            
+            #if( $PictureLinkType == "HTML5 Video")
+                            #if(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")} != ""|| ${xf.ViewSliderSetting($SliderItem,"HTMLOGG","")} != "" || ${xf.ViewSliderSetting($SliderItem,"HTMLWEBM","")} != "")
+                                <div class="text-center icon_box_line video_box">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="dg-line12"><span class="plus"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video_bg" style="background-image: url(${xf.PictureUrl($SliderItem,"BackDrop","")});">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h2 class="detail_title">GAME TRAILER</h2>
+                                                <div class="responsive-video">    
+                                                <video id="media" width="100%" height="100%" controls> 
+                                                <source src="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLMP4","")})}" type="video/mp4"></source>
+                                                <source src="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLOGG","")})}" type="video/ogg"></source>
+                                                <source src="${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"HTMLWEBM","")})}" type="video/webm"></source>
+                                                Your browser does not support the video tag. </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #end
+                  #elseif($PictureLinkType == "YouTube Video")
+                            #if(${xf.ViewSliderSetting($SliderItem,"YoutubeId","")} !="")
+                            <div class="text-center icon_box_line video_box">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="dg-line12"><span class="plus"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video_bg" style="background-image: url(${xf.PictureUrl($SliderItem,"BackDrop","")});">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h2 class="detail_title">GAME TRAILER</h2>
+                                                <div class="responsive-video">    
+                                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${xf.ViewSliderSetting($SliderItem,"YoutubeId","")}" frameborder="0" ></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #end
+                  #elseif($PictureLinkType == "Vimeo Video")
+                              #if(${xf.ViewSliderSetting($SliderItem,"VimeoId","")} !="")
+                            <div class="text-center icon_box_line video_box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="dg-line12"><span class="plus"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_bg" style="background-image: url(${xf.PictureUrl($SliderItem,"BackDrop","")});">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2 class="detail_title">GAME TRAILER</h2>
+                                            <div class="responsive-video">    
+                                            <iframe width="100%" height="100%" src="https://player.vimeo.com/video/${xf.ViewSliderSetting($SliderItem,"VimeoId","")}" frameborder="0" ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        #end
+                  #end
+            
+            #if($RelationSliders.Count > 0) 
+            <div class="text-center icon_box_line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="dg-line12"><span class="plus"></span></div>
+                        </div>
+                    </div>
+                    <h2 class="detail_title">RELATED GAMES</h2>
+                    <div class="owl-carousel" data-autoplay="true" data-items="3" data-margin="15" >
+                    
+                    #foreach($RelationItem in $RelationSliders)
+                        <div class="item ">
+                          <div class="dg-imagebox">
+                            <div class="pic">
+                              <img src="#if(${xf.PictureUrl($RelationItem,"Picture","")} == "")${xf.PictureUrl($RelationItem,"MainLogo","")} #else ${xf.PictureUrl($RelationItem,"Picture","")} #end" />
+                              <a href="${xf.GoUrl($RelationItem)}" title="${RelationItem.Title}">  
+                              </a>
+                              <div class="relation_title">${RelationItem.Title}</div>
+                            </div>
+                          </div>
+                        </div>
+                    #end
+                     
+                    </div>
+                </div>
+              </div>
+           #end
+       
+</div>
+
+<style type="text/css">
+.main_head{
+    padding-top: 150px;
+}
+.BannerPane{
+    display: none;
+}
+#dnn_content{
+    padding-top:0 !important;
+}
+
+#pro-img-list${ModuleID}{
+    margin:0 0 0 -10px;
+}
+#pro-img-list${ModuleID} .pro-photo{
+    margin:0 0 10px 10px ;
+}
+#flip-list${ModuleID}.numbercolumns-3 li:nth-child(3n+1) {
+    clear:left;
+}   
+@media only screen and (min-width: 1200px) {
+    #pro-img-list${ModuleID}.pro-img-list.numbercolumns-3 li{
+        clear:none;
+    }
+    #pro-img-list${ModuleID}.numberLarge-3 li:nth-child(3n+1) {
+        clear:left;
+    }   
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #pro-img-list${ModuleID}.pro-img-list.numbercolumns-3 li{
+        clear:none;
+    }
+    #pro-img-list${ModuleID}.numbertablet-3 li:nth-child(3n+1) {
+        clear:left;
+    }   
+}
+@media only screen and (max-width: 767px) {
+    .main_head{
+    padding-top: 50px;
+}
+    #pro-img-list${ModuleID}.pro-img-list.numbercolumns-3 li,
+    #pro-img-list${ModuleID}{
+        clear:none;
+        width: auto;
+        float: none;
+        margin:0;
+    }
+    #pro-img-list${ModuleID} .pro-photo{
+        margin-left: 0px;
+    }
+    #pro-img-list${ModuleID}.numberphone-3 li:nth-child(3n+1) {
+        clear:left;
+    }   
+
+}
+</style>
+<script type="text/javascript">
+// $(window).load(function(){
+//     if($(".main_head").length!=0){
+//     if(Math.round($("#dnn_content").offset().top)<Math.round($(".header_bg").height())){ 
+//         $(".main_head").css("paddingTop",$(".header_bg").height() + 50)
+//     }
+//     }
+// })
+// 
+$(document).ready(function() {
+
+    var gamefeatureshtml ="";
+    function mobilewith()
+            {
+                if($(window).width()<=767){
+                if(gamefeatureshtml==""){   
+                 gamefeatureshtml = $(".gamefeatures").html();
+                }
+                    $(".new-carousel").each(function(index) {
+                    var e =$(this);
+                        e.find(".pro-img-list").addClass("owl-carousel dg-testimonials01").owlCarousel({
+                                items : e.attr("data-items")      ? e.data("items")       :1,
+                            nav : e.attr("data-nav") ? e.data("nav")  :true,
+                            dots: e.attr("data-dots") ? e.data("dots")  :false,
+                                autoPlay : e.attr("data-autoplay")   ? e.data("autoplay")   :false,
+                            autoHeight : e.attr("data-autoheight") ? e.data("autoheight")  :false,
+                            stopOnHover : true,
+                            loop:true,
+                        itemsDesktop : [1199, 1],
+                        itemsDesktopSmall : [979, 1],
+                        itemsTablet : [768, 1],
+                        itemsMobile : [479, 1],
+                        });
+
+                        });
+
+                }else{
+                    if(gamefeatureshtml!=""){
+                        $(".gamefeatures").html(gamefeatureshtml);
+                        gamefeatureshtml="";
+                    }
+                }
+            }
+    
+    mobilewith()
+     $(window).resize(function(){
+    mobilewith();
+    
+  })
+    
+   $(".paly_html5_video").prolight({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        mainClass: 'prolight_zoom_in',
+        callbacks: {
+          beforeOpen: function () {
+            this.st.mainClass = this.st.el.attr('data-effect') ? this.st.el.attr('data-effect') : "mfp-zoom-in";
+          },
+          close: function() {
+              $(".mfp_popup_game").html(" ");
+          }
+        },
+        removalDelay: 500,
+        closeOnContentClick: false,
+        closeOnBgClick:false,
+        midClick: true
+      })
+
+     
+    $(".paly_html5_video").on("click",function(){
+    
+        var video='<video ';
+        if($(this).data("ogg")){
+        video+=' src="'+$(this).data("ogg")+'"';
+        }
+        video+=' controls="controls" >';
+        if($(this).data("mp4")){
+        video+='<source src="'+$(this).data("mp4")+'" type="video/mp4">';
+        }
+        if($(this).data("webm")){
+        video+='<source src="'+$(this).data("webm")+'" type="video/webm">';
+        }
+        video+='Your browser does not support the video tag.';
+        video+='</video>';
+        
+        
+        
+        $(".mfp-content > div").addClass("mfp_popup_game").append('<div class="game-iframe"><div class="responsive-video">'+video+'</div></div>');
+        
+        
+    })   
+    
+    
+
+
+     
+});
+
+$(document).ready(function () {
+/*OwlCarousel 2*/
+    if(typeof($(document).owlCarousel) =="function"){
+    $(".owl-carousel").each(function () {
+        var e = $(this);
+        var itme = e.data("items") ? e.data("items") : 4;
+        var carousel_default = {
+            items : itme,
+            loop : true,
+            center : false,
+            rewind : false,
+            mouseDrag : true,
+            touchDrag : true,
+            pullDrag : true,
+            freeDrag : false,
+            margin : 0,
+            stagePadding : 0,
+            merge : false,
+            mergeFit : true,
+            autoWidth : false,
+            startPosition : 0,
+            rtl : false,
+            smartSpeed : 250,
+            fluidSpeed : false,
+            dragEndSpeed : false,
+            responsiveRefreshRate : 200,
+            responsiveBaseElement : window,
+            fallbackEasing : 'swing',
+            info : false,
+            nestedItemSelector : false,
+            MobileSmall : 1,
+            autoplay : false,
+            autoplayTimeout : 3000,
+            autoplayHoverPause : true,
+            autoHeight : false,
+            nav : true,
+            animateOut : '',
+            animateIn : '',
+            navText : ['<', '>'],
+            navSpeed : false,
+            navElement : 'div',
+            navContainer : false,
+            slideBy : 1,
+            dots : false,
+            dotsEach : false,
+            dotsData : false,
+            dotsSpeed : false,
+            dotsContainer : false,
+            maxHeight:false,
+            model3D:false,
+            mobile : Math.max(itme - 3, 1),
+            tablet : Math.max(itme - 2, Math.min(2, itme)),
+            desktopSmall : Math.max(itme - 1, Math.min(3, itme)),
+            desktop : Math.max(itme - 1, Math.min(3, itme))
+        };
+
+        for (i in carousel_default) {
+            if (e.data(i) != undefined) {
+                carousel_default[i] = e.data(i);
+            } else if (e.data(i.toLowerCase()) != undefined) {
+                carousel_default[i] = e.data(i.toLowerCase());
+            }
+        };
+        carousel_default["responsive"] = {
+            0 : {
+                items : carousel_default["MobileSmall"]
+            },
+            321 : {
+                items : carousel_default["mobile"]
+            },
+            481 : {
+                items : carousel_default["tablet"]
+            },
+            769 : {
+                items : carousel_default["desktopSmall"]
+            },
+            993 : {
+                items : carousel_default["desktop"]
+            },
+            1201 : {
+                items : carousel_default["items"]
+            }
+        };
+        
+        if(carousel_default["model3D"]){
+            carousel_default["maxHeight"]=true;
+            carousel_default["center"]=true;
+            carousel_default["mouseDrag"]=false;
+            
+            var moves=0,rotate=true;
+            e.on("translated.owl.carousel",function(x){
+                rotate=true;
+            })
+            var prev=true,next=true;
+            e.on("drag.owl.carousel",function(x){ 
+                e.addClass("owl-grab owl-drag")
+                moves==0?moves=x.originalEvent.offsetX:"";
+                 if(x.originalEvent.offsetX - moves >20 && rotate && prev){
+                    moves = x.originalEvent.offsetX;
+                    e.trigger('prev.owl');
+                    next=false;
+                 }
+                if(x.originalEvent.offsetX - moves < -20 && rotate && next){
+                    moves=x.originalEvent.offsetX;
+                    e.trigger('next.owl');
+                    prev=false;
+                }
+                if(x.originalEvent.screenX ==0){
+                    moves=0;
+                    prev=true;
+                    next=true;
+                    e.removeClass("owl-grab owl-drag");
+                }
+            })
+        }
+        
+        if(carousel_default["maxHeight"]){
+            e.on("refreshed.owl.carousel",function(x){
+                    var max_height=0;
+                    e.find(".owl-item.center").addClass("temporary");
+                    e.find(".owl-item").addClass("center");
+                    e.find(".owl-item.center").each(function() {
+                       max_height=Math.max(max_height,$(this).innerHeight());
+                    });
+                    e.find(".owl-item").removeClass("center");
+                    e.find(".owl-item.temporary").addClass("center").removeClass("temporary");
+                    e.find(".owl-stage-outer").css("height",max_height)
+            })
+        }
+        
+        if(carousel_default["center"]){
+            e.on("initialized.owl.carousel translate.owl.carousel",function(x){
+                e.find(".owl-item.next").removeClass("next");
+                e.find(".owl-item.prev").removeClass("prev");
+                e.find(".owl-item").eq(x.item.index).addClass("center");
+                e.find(".owl-item").eq(x.item.index+1).addClass("prev");
+                e.find(".owl-item").eq(x.item.index-1).addClass("next");
+            })
+        }
+        if(carousel_default["maxHeight"] || e.attr("class").indexOf("dg-testimonial")){
+            ImgLoad(function () {
+                e.owlCarousel(carousel_default);
+            },e)
+        }else{
+            e.owlCarousel(carousel_default);
+        }
+        e.removeClass("loading");
+        
+         
+         
+    })
+    
+    }
+});
+$(document).ready(function () {
+    $(".detail_box").on("click",".paly_LightBox_youtube",function(){
+         $(".mfp-iframe-scaler").append("<div class=\"mfp-close no_before\" style=\"bottom:0;top:auto !important;padding:0;margin:0;width:21px;height:17px;right:0px;\"></div>");
+      })
+    });
+    
+    if("${xf.ViewSliderSetting($SliderItem,"GameLinkDesktop","")}"==""){
+                var url = "https://showcase.playngo.com/Casino/js?div=flashobject&gid=${xf.ViewSliderSetting($SliderItem,"Gid","")}&lang="+cuuLanguage+"&pid=2&demo=2&background=%23000000&practice=1&username=&width=100%&height=100%&callback=flashCallback&_=1517474637677";
+                var scripturl =  $("<script type=\"text/javascript\" src=\""+url+"\"><\/script>");
+                    $(".mfp-iframe-scaler").html("<div id=\"flashobject\"><span class=\"loading\"><i></i></span></div>");
+                    $("#flashobject").append(scripturl);
+            }else{
+                var url = "${xf.ViewSliderSetting($SliderItem,"GameLinkDesktop","")}";
+                var scripturl =  $('<iframe src="'+url+'" id="png-game-container" allow="autoplay" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px;"></iframe>');
+            }
+            $(".game_type_btn").attr("href",url).addClass("paly_LightBox_youtube");
+
+  if(typeof(MobileDetect) =="function"){
+    var md = new MobileDetect(window.navigator.userAgent),
+        phone = md.phone(),
+        tablet = md.tablet();
+  }else{
+        phone = false,
+        tablet =false;
+  }
+    
+    if("${xf.ViewSliderSetting($SliderItem,"GameLinkMobile","")}" =="" ){
+        var mobilelink = "https://showcase.playngo.com/Casino/PlayMobile?pid=2&gid=${xf.ViewSliderSetting($SliderItem,"Gid","")}&ctx=AllGames&lang="+cuuLanguage+"&practice=1&lobby=http%3A%2F%2Fwww.playngo.com%2FGames";
+    }else{
+        var mobilelink = "${xf.ViewSliderSetting($SliderItem,"GameLinkMobile","")}";
+    }
+if(tablet){
+    if($(".game_type_btn").data("type") == "mobile" ){
+        $(".game_type_btn").attr("href",mobilelink).removeClass("paly_LightBox_youtube");
+    }
+}else if(phone){
+    $(".game_type_btn").attr("href",mobilelink);
+}
+
+
+
+var cuuLanguage="${Module.language}".replace("-","_");
+
+    $('.paly_LightBox_youtube').prolight({
+	    disableOn: 700,
+	    type: 'iframe',
+	    preloader: false,
+	    fixedContentPos: false,
+	    callbacks: {
+            beforeOpen: function () {
+           
+            this.st.mainClass = this.st.el.attr('data-effect') ? this.st.el.attr('data-effect')+" customization" : "mfp-zoom-in customization";
+          },
+          open: function () {
+
+            $(".mfp-content").append($(".mfp-container .mfp-close"));
+
+            if("${xf.ViewSliderSetting($SliderItem,"GameLinkDesktop","")}"==""){
+                var url = "https://showcase.playngo.com/Casino/js?div=flashobject&gid=${xf.ViewSliderSetting($SliderItem,"Gid","")}&lang="+cuuLanguage+"&pid=2&demo=2&background=%23000000&practice=1&username=&width=100%&height=100%&callback=flashCallback&_=1517474637677";
+                var scripturl =  $("<script type=\"text/javascript\" src=\""+url+"\"><\/script>");
+                    $(".mfp-iframe-scaler").html("<div id=\"flashobject\"><span class=\"loading\"><i></i></span></div>");
+                    $("#flashobject").append(scripturl);
+            }else{
+                var url = "${xf.ViewSliderSetting($SliderItem,"GameLinkDesktop","")}";
+                var scripturl =  $('<iframe src="'+url+'" id="png-game-container" allow="autoplay" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px;"></iframe>');
+            }
+            $(".game_type_btn").attr("href",url).addClass("paly_LightBox_youtube");
+            $(".mfp-wrap").css({"background":"url('${xf.PictureUrl($SliderItem,"BackDrop","")}') no-repeat center center","background-size":"cover"}).hide().fadeIn();
+            $(".mfp-container").addClass("mfp_popup_game");    
+            $(".mfp-iframe-scaler").addClass("responsive-video");   
+          },
+          beforeClose:function(){
+            $(".mfp-wrap").fadeOut();
+          }
+	    },
+	    removalDelay: 500,
+	    closeOnContentClick: false,
+        closeOnBgClick:false,
+	    midClick: false
+	  });
+    
+
+
+     function flashCallback(data){
+    
+    if(data["reason"] == "Exit" || data["id"]  == "logout"){
+      $(".mfp-close").click();
+    }
+  }
+ 
+</script>

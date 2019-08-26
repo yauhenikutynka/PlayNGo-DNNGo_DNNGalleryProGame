@@ -1,0 +1,59 @@
+﻿<div id="PlayngoGames_new${ModuleID}" class="$ThemeName PlayngoGames_new ">
+  <div class="game-tags"></div>
+
+  <div class="container">
+    <div class="filter_block">
+
+
+      <div class="game-main">
+        #if($SliderList.Count > 0)
+        #foreach($SliderItem in $SliderList)
+        #if(${velocityCount} <= 5) <div class="game-items animat-order">
+          <div class="pro-game-pic img_zoom">
+            <a href="${xf.GoUrl($SliderItem)}" title="${xf.ViewSliderSetting($SliderItem," Title","")}"
+              data-effect="mfp-zoom-in" class="prolight_Box">
+              <div class="img-box"
+                style='background-image: url("${xf.ViewLinkUrl(${xf.ViewSliderSetting($SliderItem,"DashImage","")})}")'>
+              </div>
+            </a>
+            <div class="pic-info">
+              <h3 class="name">
+                <a href="${xf.GoUrl($SliderItem)}" title="${xf.ViewSliderSetting($SliderItem," Title","")}"
+                  data-effect="mfp-zoom-in" class="prolight_Box">
+                  ${xf.ViewSliderSetting($SliderItem,"Title","")}
+                </a>
+              </h3>
+              <div class="description">
+                
+                
+                  ${xf.ViewSliderSetting($SliderItem,"Summary","")}
+               
+              </div>
+              <div classs="btn"><a class="btn" href="${xf.GoUrl($SliderItem)}"
+                  title="${xf.ViewSliderSetting($SliderItem," Title","")}" data-effect="mfp-zoom-in">GAME INFO</a></div>
+            </div>
+          </div>
+      </div>
+      #end
+      #end
+      #end
+    </div>
+
+
+    <div id="" class="mfp_popup_game"> </div>
+
+  </div>
+</div>
+</div>
+
+<script>
+    var reTag = /<(?:.|\s)*?>/g;
+    $("#PlayngoGames_new${ModuleID} .game-items .description").each(function(){
+      var SummaryCut = $(this).text();
+        if(SummaryCut.length > 140){
+          SummaryCut =SummaryCut.replace(reTag,"").substring(0,140);
+          SummaryCut =SummaryCut.substring(0,SummaryCut.lastIndexOf(" "))+"…";
+          $(this).html(SummaryCut);
+        }
+    })
+</script>

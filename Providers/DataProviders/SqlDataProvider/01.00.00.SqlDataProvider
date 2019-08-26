@@ -1,0 +1,149 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_DNNGalleryProGame_Slider  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Options] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[CreateUser] [int] NOT NULL,
+		[CreateTime] [datetime] NOT NULL,
+		[StartTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_StartTime DEFAULT getdate(),
+		[EndTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_EndTime DEFAULT Dateadd(yyyy,10,getdate()),
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_Slider] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+/** DNNGo_DNNGalleryProGame_Layer  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Layer]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Layer](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[SliderID] [int] NOT NULL,
+		[Options] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[CreateUser] [int] NOT NULL,
+		[CreateTime] [datetime] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_Layer] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+
+
+
+/** DNNGo_DNNGalleryProGame_Group  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Group]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Group](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](100) NOT NULL,
+		[Description] [nvarchar](512) NULL,
+		[QuoteCount] [int] NOT NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_Group] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+/** DNNGo_DNNGalleryProGame_Slider_Group  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Group]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Group](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[SliderID] [int] NOT NULL,
+		[GroupID] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Group] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+/** DNNGo_DNNGalleryProGame_Files  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Files]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Files](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](256) NOT NULL,
+		[FileName] [nvarchar](128) NOT NULL,
+		[FileMate] [nvarchar](32) NOT NULL,
+		[FilePath] [nvarchar](256) NOT NULL,
+		[FileExtension] [nvarchar](32) NOT NULL,
+		[FileSize] [int] NOT NULL,
+		[ImageWidth] [int] NOT NULL,
+		[ImageHeight] [int] NOT NULL,
+		[Exif] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Files_Status DEFAULT 1,
+		[LastTime] [datetime] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [varchar](32) NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Extension1] [tinyint] NOT NULL,
+		[Extension2] [int] NOT NULL,
+		[Extension3] [nvarchar](512) NULL,
+		[Extension4] [ntext] NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_Files] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+ 
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

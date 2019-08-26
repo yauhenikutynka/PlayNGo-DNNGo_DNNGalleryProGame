@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGalleryProGame>
+  <EffectDB>
+    <Name>
+      <![CDATA[PlayngoGames_Edition]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.00.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[jquery.isotope.js,jquery.mCustomScrollbar.js,jquery.cookie.js,mobile-detect.min.js,docs.js,owl.carousel.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.tmpl.min.js,lightbox.js,lightbox.css,font-icon.css]]>
+    </GlobalScript>
+    <DemoUrl>
+      <![CDATA[]]>
+    </DemoUrl>
+	
+  
+  <LayerName><![CDATA[Features Image]]></LayerName>
+	<Ajax><![CDATA[false]]></Ajax>
+	<Responsive><![CDATA[true]]></Responsive>
+	<Layers><![CDATA[true]]></Layers>
+    <Pager><![CDATA[false]]></Pager>
+	<Groups><![CDATA[true]]></Groups>
+
+  </EffectDB>
+</DNNGo_DNNGalleryProGame>

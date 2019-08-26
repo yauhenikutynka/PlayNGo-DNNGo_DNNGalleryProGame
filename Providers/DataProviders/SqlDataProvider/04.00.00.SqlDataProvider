@@ -1,0 +1,67 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_DNNGalleryProGame_Slider  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Slider] ADD
+	Clicks int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Clicks DEFAULT 0,
+	Views int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Views DEFAULT 0,
+	Heats int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Slider_Heats DEFAULT 0
+END
+GO
+ 
+
+/** DNNGo_DNNGalleryProGame_Layer  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Layer]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_Layer] ADD
+	Per_AllUsers tinyint NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Layer_Per_AllUsers DEFAULT ((0)),
+	Per_Roles ntext NULL,
+	Clicks int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Layer_Clicks DEFAULT 0,
+	Views int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Layer_Views DEFAULT 0,
+	Heats int NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_DNNGalleryProGame_Layer_Heats DEFAULT 0
+END
+GO
+
+/** DNNGo_DNNGalleryProGame_FileLogs  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_FileLogs]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_DNNGalleryProGame_FileLogs](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[SliderID] [int] NOT NULL,
+		[LayerID] [int] NOT NULL,
+		[FileID] [int] NOT NULL,
+		[FileLink] [nvarchar](512) NULL,
+		[Options] [ntext] NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[CreateTime] [datetime] NOT NULL,
+		[CreateUser] [int] NOT NULL,
+		[CreateIP] [nvarchar](50) NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_DNNGalleryProGame_FileLogs] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO 
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

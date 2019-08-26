@@ -1,0 +1,3250 @@
+﻿@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flag-icon-background{background-size:contain;background-position:50%;background-repeat:no-repeat}.flag-icon{background-size:contain;background-position:50%;background-repeat:no-repeat;position:relative;display:inline-block;width:1.33333333em;line-height:1em}.flag-icon:before{content:"\00a0"}.flag-icon.flag-icon-squared{width:1em}.flag-icon-ad{background-image:url(../flags/4x3/ad.svg)}.flag-icon-ad.flag-icon-squared{background-image:url(../flags/1x1/ad.svg)}.flag-icon-ae{background-image:url(../flags/4x3/ae.svg)}.flag-icon-ae.flag-icon-squared{background-image:url(../flags/1x1/ae.svg)}.flag-icon-af{background-image:url(../flags/4x3/af.svg)}.flag-icon-af.flag-icon-squared{background-image:url(../flags/1x1/af.svg)}.flag-icon-ag{background-image:url(../flags/4x3/ag.svg)}.flag-icon-ag.flag-icon-squared{background-image:url(../flags/1x1/ag.svg)}.flag-icon-ai{background-image:url(../flags/4x3/ai.svg)}.flag-icon-ai.flag-icon-squared{background-image:url(../flags/1x1/ai.svg)}.flag-icon-al{background-image:url(../flags/4x3/al.svg)}.flag-icon-al.flag-icon-squared{background-image:url(../flags/1x1/al.svg)}.flag-icon-am{background-image:url(../flags/4x3/am.svg)}.flag-icon-am.flag-icon-squared{background-image:url(../flags/1x1/am.svg)}.flag-icon-ao{background-image:url(../flags/4x3/ao.svg)}.flag-icon-ao.flag-icon-squared{background-image:url(../flags/1x1/ao.svg)}.flag-icon-aq{background-image:url(../flags/4x3/aq.svg)}.flag-icon-aq.flag-icon-squared{background-image:url(../flags/1x1/aq.svg)}.flag-icon-ar{background-image:url(../flags/4x3/ar.svg)}.flag-icon-ar.flag-icon-squared{background-image:url(../flags/1x1/ar.svg)}.flag-icon-as{background-image:url(../flags/4x3/as.svg)}.flag-icon-as.flag-icon-squared{background-image:url(../flags/1x1/as.svg)}.flag-icon-at{background-image:url(../flags/4x3/at.svg)}.flag-icon-at.flag-icon-squared{background-image:url(../flags/1x1/at.svg)}.flag-icon-au{background-image:url(../flags/4x3/au.svg)}.flag-icon-au.flag-icon-squared{background-image:url(../flags/1x1/au.svg)}.flag-icon-aw{background-image:url(../flags/4x3/aw.svg)}.flag-icon-aw.flag-icon-squared{background-image:url(../flags/1x1/aw.svg)}.flag-icon-ax{background-image:url(../flags/4x3/ax.svg)}.flag-icon-ax.flag-icon-squared{background-image:url(../flags/1x1/ax.svg)}.flag-icon-az{background-image:url(../flags/4x3/az.svg)}.flag-icon-az.flag-icon-squared{background-image:url(../flags/1x1/az.svg)}.flag-icon-ba{background-image:url(../flags/4x3/ba.svg)}.flag-icon-ba.flag-icon-squared{background-image:url(../flags/1x1/ba.svg)}.flag-icon-bb{background-image:url(../flags/4x3/bb.svg)}.flag-icon-bb.flag-icon-squared{background-image:url(../flags/1x1/bb.svg)}.flag-icon-bd{background-image:url(../flags/4x3/bd.svg)}.flag-icon-bd.flag-icon-squared{background-image:url(../flags/1x1/bd.svg)}.flag-icon-be{background-image:url(../flags/4x3/be.svg)}.flag-icon-be.flag-icon-squared{background-image:url(../flags/1x1/be.svg)}.flag-icon-bf{background-image:url(../flags/4x3/bf.svg)}.flag-icon-bf.flag-icon-squared{background-image:url(../flags/1x1/bf.svg)}.flag-icon-bg{background-image:url(../flags/4x3/bg.svg)}.flag-icon-bg.flag-icon-squared{background-image:url(../flags/1x1/bg.svg)}.flag-icon-bh{background-image:url(../flags/4x3/bh.svg)}.flag-icon-bh.flag-icon-squared{background-image:url(../flags/1x1/bh.svg)}.flag-icon-bi{background-image:url(../flags/4x3/bi.svg)}.flag-icon-bi.flag-icon-squared{background-image:url(../flags/1x1/bi.svg)}.flag-icon-bj{background-image:url(../flags/4x3/bj.svg)}.flag-icon-bj.flag-icon-squared{background-image:url(../flags/1x1/bj.svg)}.flag-icon-bl{background-image:url(../flags/4x3/bl.svg)}.flag-icon-bl.flag-icon-squared{background-image:url(../flags/1x1/bl.svg)}.flag-icon-bm{background-image:url(../flags/4x3/bm.svg)}.flag-icon-bm.flag-icon-squared{background-image:url(../flags/1x1/bm.svg)}.flag-icon-bn{background-image:url(../flags/4x3/bn.svg)}.flag-icon-bn.flag-icon-squared{background-image:url(../flags/1x1/bn.svg)}.flag-icon-bo{background-image:url(../flags/4x3/bo.svg)}.flag-icon-bo.flag-icon-squared{background-image:url(../flags/1x1/bo.svg)}.flag-icon-bq{background-image:url(../flags/4x3/bq.svg)}.flag-icon-bq.flag-icon-squared{background-image:url(../flags/1x1/bq.svg)}.flag-icon-br{background-image:url(../flags/4x3/br.svg)}.flag-icon-br.flag-icon-squared{background-image:url(../flags/1x1/br.svg)}.flag-icon-bs{background-image:url(../flags/4x3/bs.svg)}.flag-icon-bs.flag-icon-squared{background-image:url(../flags/1x1/bs.svg)}.flag-icon-bt{background-image:url(../flags/4x3/bt.svg)}.flag-icon-bt.flag-icon-squared{background-image:url(../flags/1x1/bt.svg)}.flag-icon-bv{background-image:url(../flags/4x3/bv.svg)}.flag-icon-bv.flag-icon-squared{background-image:url(../flags/1x1/bv.svg)}.flag-icon-bw{background-image:url(../flags/4x3/bw.svg)}.flag-icon-bw.flag-icon-squared{background-image:url(../flags/1x1/bw.svg)}.flag-icon-by{background-image:url(../flags/4x3/by.svg)}.flag-icon-by.flag-icon-squared{background-image:url(../flags/1x1/by.svg)}.flag-icon-bz{background-image:url(../flags/4x3/bz.svg)}.flag-icon-bz.flag-icon-squared{background-image:url(../flags/1x1/bz.svg)}.flag-icon-ca{background-image:url(../flags/4x3/ca.svg)}.flag-icon-ca.flag-icon-squared{background-image:url(../flags/1x1/ca.svg)}.flag-icon-cc{background-image:url(../flags/4x3/cc.svg)}.flag-icon-cc.flag-icon-squared{background-image:url(../flags/1x1/cc.svg)}.flag-icon-cd{background-image:url(../flags/4x3/cd.svg)}.flag-icon-cd.flag-icon-squared{background-image:url(../flags/1x1/cd.svg)}.flag-icon-cf{background-image:url(../flags/4x3/cf.svg)}.flag-icon-cf.flag-icon-squared{background-image:url(../flags/1x1/cf.svg)}.flag-icon-cg{background-image:url(../flags/4x3/cg.svg)}.flag-icon-cg.flag-icon-squared{background-image:url(../flags/1x1/cg.svg)}.flag-icon-ch{background-image:url(../flags/4x3/ch.svg)}.flag-icon-ch.flag-icon-squared{background-image:url(../flags/1x1/ch.svg)}.flag-icon-ci{background-image:url(../flags/4x3/ci.svg)}.flag-icon-ci.flag-icon-squared{background-image:url(../flags/1x1/ci.svg)}.flag-icon-ck{background-image:url(../flags/4x3/ck.svg)}.flag-icon-ck.flag-icon-squared{background-image:url(../flags/1x1/ck.svg)}.flag-icon-cl{background-image:url(../flags/4x3/cl.svg)}.flag-icon-cl.flag-icon-squared{background-image:url(../flags/1x1/cl.svg)}.flag-icon-cm{background-image:url(../flags/4x3/cm.svg)}.flag-icon-cm.flag-icon-squared{background-image:url(../flags/1x1/cm.svg)}.flag-icon-cn{background-image:url(../flags/4x3/cn.svg)}.flag-icon-cn.flag-icon-squared{background-image:url(../flags/1x1/cn.svg)}.flag-icon-co{background-image:url(../flags/4x3/co.svg)}.flag-icon-co.flag-icon-squared{background-image:url(../flags/1x1/co.svg)}.flag-icon-cr{background-image:url(../flags/4x3/cr.svg)}.flag-icon-cr.flag-icon-squared{background-image:url(../flags/1x1/cr.svg)}.flag-icon-cu{background-image:url(../flags/4x3/cu.svg)}.flag-icon-cu.flag-icon-squared{background-image:url(../flags/1x1/cu.svg)}.flag-icon-cv{background-image:url(../flags/4x3/cv.svg)}.flag-icon-cv.flag-icon-squared{background-image:url(../flags/1x1/cv.svg)}.flag-icon-cw{background-image:url(../flags/4x3/cw.svg)}.flag-icon-cw.flag-icon-squared{background-image:url(../flags/1x1/cw.svg)}.flag-icon-cx{background-image:url(../flags/4x3/cx.svg)}.flag-icon-cx.flag-icon-squared{background-image:url(../flags/1x1/cx.svg)}.flag-icon-cy{background-image:url(../flags/4x3/cy.svg)}.flag-icon-cy.flag-icon-squared{background-image:url(../flags/1x1/cy.svg)}.flag-icon-cz{background-image:url(../flags/4x3/cz.svg)}.flag-icon-cz.flag-icon-squared{background-image:url(../flags/1x1/cz.svg)}.flag-icon-de{background-image:url(../flags/4x3/de.svg)}.flag-icon-de.flag-icon-squared{background-image:url(../flags/1x1/de.svg)}.flag-icon-dj{background-image:url(../flags/4x3/dj.svg)}.flag-icon-dj.flag-icon-squared{background-image:url(../flags/1x1/dj.svg)}.flag-icon-dk{background-image:url(../flags/4x3/dk.svg)}.flag-icon-dk.flag-icon-squared{background-image:url(../flags/1x1/dk.svg)}.flag-icon-dm{background-image:url(../flags/4x3/dm.svg)}.flag-icon-dm.flag-icon-squared{background-image:url(../flags/1x1/dm.svg)}.flag-icon-do{background-image:url(../flags/4x3/do.svg)}.flag-icon-do.flag-icon-squared{background-image:url(../flags/1x1/do.svg)}.flag-icon-dz{background-image:url(../flags/4x3/dz.svg)}.flag-icon-dz.flag-icon-squared{background-image:url(../flags/1x1/dz.svg)}.flag-icon-ec{background-image:url(../flags/4x3/ec.svg)}.flag-icon-ec.flag-icon-squared{background-image:url(../flags/1x1/ec.svg)}.flag-icon-ee{background-image:url(../flags/4x3/ee.svg)}.flag-icon-ee.flag-icon-squared{background-image:url(../flags/1x1/ee.svg)}.flag-icon-eg{background-image:url(../flags/4x3/eg.svg)}.flag-icon-eg.flag-icon-squared{background-image:url(../flags/1x1/eg.svg)}.flag-icon-eh{background-image:url(../flags/4x3/eh.svg)}.flag-icon-eh.flag-icon-squared{background-image:url(../flags/1x1/eh.svg)}.flag-icon-er{background-image:url(../flags/4x3/er.svg)}.flag-icon-er.flag-icon-squared{background-image:url(../flags/1x1/er.svg)}.flag-icon-es{background-image:url(../flags/4x3/es.svg)}.flag-icon-es.flag-icon-squared{background-image:url(../flags/1x1/es.svg)}.flag-icon-et{background-image:url(../flags/4x3/et.svg)}.flag-icon-et.flag-icon-squared{background-image:url(../flags/1x1/et.svg)}.flag-icon-fi{background-image:url(../flags/4x3/fi.svg)}.flag-icon-fi.flag-icon-squared{background-image:url(../flags/1x1/fi.svg)}.flag-icon-fj{background-image:url(../flags/4x3/fj.svg)}.flag-icon-fj.flag-icon-squared{background-image:url(../flags/1x1/fj.svg)}.flag-icon-fk{background-image:url(../flags/4x3/fk.svg)}.flag-icon-fk.flag-icon-squared{background-image:url(../flags/1x1/fk.svg)}.flag-icon-fm{background-image:url(../flags/4x3/fm.svg)}.flag-icon-fm.flag-icon-squared{background-image:url(../flags/1x1/fm.svg)}.flag-icon-fo{background-image:url(../flags/4x3/fo.svg)}.flag-icon-fo.flag-icon-squared{background-image:url(../flags/1x1/fo.svg)}.flag-icon-fr{background-image:url(../flags/4x3/fr.svg)}.flag-icon-fr.flag-icon-squared{background-image:url(../flags/1x1/fr.svg)}.flag-icon-ga{background-image:url(../flags/4x3/ga.svg)}.flag-icon-ga.flag-icon-squared{background-image:url(../flags/1x1/ga.svg)}.flag-icon-gb{background-image:url(../flags/4x3/gb.svg)}.flag-icon-gb.flag-icon-squared{background-image:url(../flags/1x1/gb.svg)}.flag-icon-gd{background-image:url(../flags/4x3/gd.svg)}.flag-icon-gd.flag-icon-squared{background-image:url(../flags/1x1/gd.svg)}.flag-icon-ge{background-image:url(../flags/4x3/ge.svg)}.flag-icon-ge.flag-icon-squared{background-image:url(../flags/1x1/ge.svg)}.flag-icon-gf{background-image:url(../flags/4x3/gf.svg)}.flag-icon-gf.flag-icon-squared{background-image:url(../flags/1x1/gf.svg)}.flag-icon-gg{background-image:url(../flags/4x3/gg.svg)}.flag-icon-gg.flag-icon-squared{background-image:url(../flags/1x1/gg.svg)}.flag-icon-gh{background-image:url(../flags/4x3/gh.svg)}.flag-icon-gh.flag-icon-squared{background-image:url(../flags/1x1/gh.svg)}.flag-icon-gi{background-image:url(../flags/4x3/gi.svg)}.flag-icon-gi.flag-icon-squared{background-image:url(../flags/1x1/gi.svg)}.flag-icon-gl{background-image:url(../flags/4x3/gl.svg)}.flag-icon-gl.flag-icon-squared{background-image:url(../flags/1x1/gl.svg)}.flag-icon-gm{background-image:url(../flags/4x3/gm.svg)}.flag-icon-gm.flag-icon-squared{background-image:url(../flags/1x1/gm.svg)}.flag-icon-gn{background-image:url(../flags/4x3/gn.svg)}.flag-icon-gn.flag-icon-squared{background-image:url(../flags/1x1/gn.svg)}.flag-icon-gp{background-image:url(../flags/4x3/gp.svg)}.flag-icon-gp.flag-icon-squared{background-image:url(../flags/1x1/gp.svg)}.flag-icon-gq{background-image:url(../flags/4x3/gq.svg)}.flag-icon-gq.flag-icon-squared{background-image:url(../flags/1x1/gq.svg)}.flag-icon-gr{background-image:url(../flags/4x3/gr.svg)}.flag-icon-gr.flag-icon-squared{background-image:url(../flags/1x1/gr.svg)}.flag-icon-gs{background-image:url(../flags/4x3/gs.svg)}.flag-icon-gs.flag-icon-squared{background-image:url(../flags/1x1/gs.svg)}.flag-icon-gt{background-image:url(../flags/4x3/gt.svg)}.flag-icon-gt.flag-icon-squared{background-image:url(../flags/1x1/gt.svg)}.flag-icon-gu{background-image:url(../flags/4x3/gu.svg)}.flag-icon-gu.flag-icon-squared{background-image:url(../flags/1x1/gu.svg)}.flag-icon-gw{background-image:url(../flags/4x3/gw.svg)}.flag-icon-gw.flag-icon-squared{background-image:url(../flags/1x1/gw.svg)}.flag-icon-gy{background-image:url(../flags/4x3/gy.svg)}.flag-icon-gy.flag-icon-squared{background-image:url(../flags/1x1/gy.svg)}.flag-icon-hk{background-image:url(../flags/4x3/hk.svg)}.flag-icon-hk.flag-icon-squared{background-image:url(../flags/1x1/hk.svg)}.flag-icon-hm{background-image:url(../flags/4x3/hm.svg)}.flag-icon-hm.flag-icon-squared{background-image:url(../flags/1x1/hm.svg)}.flag-icon-hn{background-image:url(../flags/4x3/hn.svg)}.flag-icon-hn.flag-icon-squared{background-image:url(../flags/1x1/hn.svg)}.flag-icon-hr{background-image:url(../flags/4x3/hr.svg)}.flag-icon-hr.flag-icon-squared{background-image:url(../flags/1x1/hr.svg)}.flag-icon-ht{background-image:url(../flags/4x3/ht.svg)}.flag-icon-ht.flag-icon-squared{background-image:url(../flags/1x1/ht.svg)}.flag-icon-hu{background-image:url(../flags/4x3/hu.svg)}.flag-icon-hu.flag-icon-squared{background-image:url(../flags/1x1/hu.svg)}.flag-icon-id{background-image:url(../flags/4x3/id.svg)}.flag-icon-id.flag-icon-squared{background-image:url(../flags/1x1/id.svg)}.flag-icon-ie{background-image:url(../flags/4x3/ie.svg)}.flag-icon-ie.flag-icon-squared{background-image:url(../flags/1x1/ie.svg)}.flag-icon-il{background-image:url(../flags/4x3/il.svg)}.flag-icon-il.flag-icon-squared{background-image:url(../flags/1x1/il.svg)}.flag-icon-im{background-image:url(../flags/4x3/im.svg)}.flag-icon-im.flag-icon-squared{background-image:url(../flags/1x1/im.svg)}.flag-icon-in{background-image:url(../flags/4x3/in.svg)}.flag-icon-in.flag-icon-squared{background-image:url(../flags/1x1/in.svg)}.flag-icon-io{background-image:url(../flags/4x3/io.svg)}.flag-icon-io.flag-icon-squared{background-image:url(../flags/1x1/io.svg)}.flag-icon-iq{background-image:url(../flags/4x3/iq.svg)}.flag-icon-iq.flag-icon-squared{background-image:url(../flags/1x1/iq.svg)}.flag-icon-ir{background-image:url(../flags/4x3/ir.svg)}.flag-icon-ir.flag-icon-squared{background-image:url(../flags/1x1/ir.svg)}.flag-icon-is{background-image:url(../flags/4x3/is.svg)}.flag-icon-is.flag-icon-squared{background-image:url(../flags/1x1/is.svg)}.flag-icon-it{background-image:url(../flags/4x3/it.svg)}.flag-icon-it.flag-icon-squared{background-image:url(../flags/1x1/it.svg)}.flag-icon-je{background-image:url(../flags/4x3/je.svg)}.flag-icon-je.flag-icon-squared{background-image:url(../flags/1x1/je.svg)}.flag-icon-jm{background-image:url(../flags/4x3/jm.svg)}.flag-icon-jm.flag-icon-squared{background-image:url(../flags/1x1/jm.svg)}.flag-icon-jo{background-image:url(../flags/4x3/jo.svg)}.flag-icon-jo.flag-icon-squared{background-image:url(../flags/1x1/jo.svg)}.flag-icon-jp{background-image:url(../flags/4x3/jp.svg)}.flag-icon-jp.flag-icon-squared{background-image:url(../flags/1x1/jp.svg)}.flag-icon-ke{background-image:url(../flags/4x3/ke.svg)}.flag-icon-ke.flag-icon-squared{background-image:url(../flags/1x1/ke.svg)}.flag-icon-kg{background-image:url(../flags/4x3/kg.svg)}.flag-icon-kg.flag-icon-squared{background-image:url(../flags/1x1/kg.svg)}.flag-icon-kh{background-image:url(../flags/4x3/kh.svg)}.flag-icon-kh.flag-icon-squared{background-image:url(../flags/1x1/kh.svg)}.flag-icon-ki{background-image:url(../flags/4x3/ki.svg)}.flag-icon-ki.flag-icon-squared{background-image:url(../flags/1x1/ki.svg)}.flag-icon-km{background-image:url(../flags/4x3/km.svg)}.flag-icon-km.flag-icon-squared{background-image:url(../flags/1x1/km.svg)}.flag-icon-kn{background-image:url(../flags/4x3/kn.svg)}.flag-icon-kn.flag-icon-squared{background-image:url(../flags/1x1/kn.svg)}.flag-icon-kp{background-image:url(../flags/4x3/kp.svg)}.flag-icon-kp.flag-icon-squared{background-image:url(../flags/1x1/kp.svg)}.flag-icon-kr{background-image:url(../flags/4x3/kr.svg)}.flag-icon-kr.flag-icon-squared{background-image:url(../flags/1x1/kr.svg)}.flag-icon-kw{background-image:url(../flags/4x3/kw.svg)}.flag-icon-kw.flag-icon-squared{background-image:url(../flags/1x1/kw.svg)}.flag-icon-ky{background-image:url(../flags/4x3/ky.svg)}.flag-icon-ky.flag-icon-squared{background-image:url(../flags/1x1/ky.svg)}.flag-icon-kz{background-image:url(../flags/4x3/kz.svg)}.flag-icon-kz.flag-icon-squared{background-image:url(../flags/1x1/kz.svg)}.flag-icon-la{background-image:url(../flags/4x3/la.svg)}.flag-icon-la.flag-icon-squared{background-image:url(../flags/1x1/la.svg)}.flag-icon-lb{background-image:url(../flags/4x3/lb.svg)}.flag-icon-lb.flag-icon-squared{background-image:url(../flags/1x1/lb.svg)}.flag-icon-lc{background-image:url(../flags/4x3/lc.svg)}.flag-icon-lc.flag-icon-squared{background-image:url(../flags/1x1/lc.svg)}.flag-icon-li{background-image:url(../flags/4x3/li.svg)}.flag-icon-li.flag-icon-squared{background-image:url(../flags/1x1/li.svg)}.flag-icon-lk{background-image:url(../flags/4x3/lk.svg)}.flag-icon-lk.flag-icon-squared{background-image:url(../flags/1x1/lk.svg)}.flag-icon-lr{background-image:url(../flags/4x3/lr.svg)}.flag-icon-lr.flag-icon-squared{background-image:url(../flags/1x1/lr.svg)}.flag-icon-ls{background-image:url(../flags/4x3/ls.svg)}.flag-icon-ls.flag-icon-squared{background-image:url(../flags/1x1/ls.svg)}.flag-icon-lt{background-image:url(../flags/4x3/lt.svg)}.flag-icon-lt.flag-icon-squared{background-image:url(../flags/1x1/lt.svg)}.flag-icon-lu{background-image:url(../flags/4x3/lu.svg)}.flag-icon-lu.flag-icon-squared{background-image:url(../flags/1x1/lu.svg)}.flag-icon-lv{background-image:url(../flags/4x3/lv.svg)}.flag-icon-lv.flag-icon-squared{background-image:url(../flags/1x1/lv.svg)}.flag-icon-ly{background-image:url(../flags/4x3/ly.svg)}.flag-icon-ly.flag-icon-squared{background-image:url(../flags/1x1/ly.svg)}.flag-icon-ma{background-image:url(../flags/4x3/ma.svg)}.flag-icon-ma.flag-icon-squared{background-image:url(../flags/1x1/ma.svg)}.flag-icon-mc{background-image:url(../flags/4x3/mc.svg)}.flag-icon-mc.flag-icon-squared{background-image:url(../flags/1x1/mc.svg)}.flag-icon-md{background-image:url(../flags/4x3/md.svg)}.flag-icon-md.flag-icon-squared{background-image:url(../flags/1x1/md.svg)}.flag-icon-me{background-image:url(../flags/4x3/me.svg)}.flag-icon-me.flag-icon-squared{background-image:url(../flags/1x1/me.svg)}.flag-icon-mf{background-image:url(../flags/4x3/mf.svg)}.flag-icon-mf.flag-icon-squared{background-image:url(../flags/1x1/mf.svg)}.flag-icon-mg{background-image:url(../flags/4x3/mg.svg)}.flag-icon-mg.flag-icon-squared{background-image:url(../flags/1x1/mg.svg)}.flag-icon-mh{background-image:url(../flags/4x3/mh.svg)}.flag-icon-mh.flag-icon-squared{background-image:url(../flags/1x1/mh.svg)}.flag-icon-mk{background-image:url(../flags/4x3/mk.svg)}.flag-icon-mk.flag-icon-squared{background-image:url(../flags/1x1/mk.svg)}.flag-icon-ml{background-image:url(../flags/4x3/ml.svg)}.flag-icon-ml.flag-icon-squared{background-image:url(../flags/1x1/ml.svg)}.flag-icon-mm{background-image:url(../flags/4x3/mm.svg)}.flag-icon-mm.flag-icon-squared{background-image:url(../flags/1x1/mm.svg)}.flag-icon-mn{background-image:url(../flags/4x3/mn.svg)}.flag-icon-mn.flag-icon-squared{background-image:url(../flags/1x1/mn.svg)}.flag-icon-mo{background-image:url(../flags/4x3/mo.svg)}.flag-icon-mo.flag-icon-squared{background-image:url(../flags/1x1/mo.svg)}.flag-icon-mp{background-image:url(../flags/4x3/mp.svg)}.flag-icon-mp.flag-icon-squared{background-image:url(../flags/1x1/mp.svg)}.flag-icon-mq{background-image:url(../flags/4x3/mq.svg)}.flag-icon-mq.flag-icon-squared{background-image:url(../flags/1x1/mq.svg)}.flag-icon-mr{background-image:url(../flags/4x3/mr.svg)}.flag-icon-mr.flag-icon-squared{background-image:url(../flags/1x1/mr.svg)}.flag-icon-ms{background-image:url(../flags/4x3/ms.svg)}.flag-icon-ms.flag-icon-squared{background-image:url(../flags/1x1/ms.svg)}.flag-icon-mt{background-image:url(../flags/4x3/mt.svg)}.flag-icon-mt.flag-icon-squared{background-image:url(../flags/1x1/mt.svg)}.flag-icon-mu{background-image:url(../flags/4x3/mu.svg)}.flag-icon-mu.flag-icon-squared{background-image:url(../flags/1x1/mu.svg)}.flag-icon-mv{background-image:url(../flags/4x3/mv.svg)}.flag-icon-mv.flag-icon-squared{background-image:url(../flags/1x1/mv.svg)}.flag-icon-mw{background-image:url(../flags/4x3/mw.svg)}.flag-icon-mw.flag-icon-squared{background-image:url(../flags/1x1/mw.svg)}.flag-icon-mx{background-image:url(../flags/4x3/mx.svg)}.flag-icon-mx.flag-icon-squared{background-image:url(../flags/1x1/mx.svg)}.flag-icon-my{background-image:url(../flags/4x3/my.svg)}.flag-icon-my.flag-icon-squared{background-image:url(../flags/1x1/my.svg)}.flag-icon-mz{background-image:url(../flags/4x3/mz.svg)}.flag-icon-mz.flag-icon-squared{background-image:url(../flags/1x1/mz.svg)}.flag-icon-na{background-image:url(../flags/4x3/na.svg)}.flag-icon-na.flag-icon-squared{background-image:url(../flags/1x1/na.svg)}.flag-icon-nc{background-image:url(../flags/4x3/nc.svg)}.flag-icon-nc.flag-icon-squared{background-image:url(../flags/1x1/nc.svg)}.flag-icon-ne{background-image:url(../flags/4x3/ne.svg)}.flag-icon-ne.flag-icon-squared{background-image:url(../flags/1x1/ne.svg)}.flag-icon-nf{background-image:url(../flags/4x3/nf.svg)}.flag-icon-nf.flag-icon-squared{background-image:url(../flags/1x1/nf.svg)}.flag-icon-ng{background-image:url(../flags/4x3/ng.svg)}.flag-icon-ng.flag-icon-squared{background-image:url(../flags/1x1/ng.svg)}.flag-icon-ni{background-image:url(../flags/4x3/ni.svg)}.flag-icon-ni.flag-icon-squared{background-image:url(../flags/1x1/ni.svg)}.flag-icon-nl{background-image:url(../flags/4x3/nl.svg)}.flag-icon-nl.flag-icon-squared{background-image:url(../flags/1x1/nl.svg)}.flag-icon-no{background-image:url(../flags/4x3/no.svg)}.flag-icon-no.flag-icon-squared{background-image:url(../flags/1x1/no.svg)}.flag-icon-np{background-image:url(../flags/4x3/np.svg)}.flag-icon-np.flag-icon-squared{background-image:url(../flags/1x1/np.svg)}.flag-icon-nr{background-image:url(../flags/4x3/nr.svg)}.flag-icon-nr.flag-icon-squared{background-image:url(../flags/1x1/nr.svg)}.flag-icon-nu{background-image:url(../flags/4x3/nu.svg)}.flag-icon-nu.flag-icon-squared{background-image:url(../flags/1x1/nu.svg)}.flag-icon-nz{background-image:url(../flags/4x3/nz.svg)}.flag-icon-nz.flag-icon-squared{background-image:url(../flags/1x1/nz.svg)}.flag-icon-om{background-image:url(../flags/4x3/om.svg)}.flag-icon-om.flag-icon-squared{background-image:url(../flags/1x1/om.svg)}.flag-icon-pa{background-image:url(../flags/4x3/pa.svg)}.flag-icon-pa.flag-icon-squared{background-image:url(../flags/1x1/pa.svg)}.flag-icon-pe{background-image:url(../flags/4x3/pe.svg)}.flag-icon-pe.flag-icon-squared{background-image:url(../flags/1x1/pe.svg)}.flag-icon-pf{background-image:url(../flags/4x3/pf.svg)}.flag-icon-pf.flag-icon-squared{background-image:url(../flags/1x1/pf.svg)}.flag-icon-pg{background-image:url(../flags/4x3/pg.svg)}.flag-icon-pg.flag-icon-squared{background-image:url(../flags/1x1/pg.svg)}.flag-icon-ph{background-image:url(../flags/4x3/ph.svg)}.flag-icon-ph.flag-icon-squared{background-image:url(../flags/1x1/ph.svg)}.flag-icon-pk{background-image:url(../flags/4x3/pk.svg)}.flag-icon-pk.flag-icon-squared{background-image:url(../flags/1x1/pk.svg)}.flag-icon-pl{background-image:url(../flags/4x3/pl.svg)}.flag-icon-pl.flag-icon-squared{background-image:url(../flags/1x1/pl.svg)}.flag-icon-pm{background-image:url(../flags/4x3/pm.svg)}.flag-icon-pm.flag-icon-squared{background-image:url(../flags/1x1/pm.svg)}.flag-icon-pn{background-image:url(../flags/4x3/pn.svg)}.flag-icon-pn.flag-icon-squared{background-image:url(../flags/1x1/pn.svg)}.flag-icon-pr{background-image:url(../flags/4x3/pr.svg)}.flag-icon-pr.flag-icon-squared{background-image:url(../flags/1x1/pr.svg)}.flag-icon-ps{background-image:url(../flags/4x3/ps.svg)}.flag-icon-ps.flag-icon-squared{background-image:url(../flags/1x1/ps.svg)}.flag-icon-pt{background-image:url(../flags/4x3/pt.svg)}.flag-icon-pt.flag-icon-squared{background-image:url(../flags/1x1/pt.svg)}.flag-icon-pw{background-image:url(../flags/4x3/pw.svg)}.flag-icon-pw.flag-icon-squared{background-image:url(../flags/1x1/pw.svg)}.flag-icon-py{background-image:url(../flags/4x3/py.svg)}.flag-icon-py.flag-icon-squared{background-image:url(../flags/1x1/py.svg)}.flag-icon-qa{background-image:url(../flags/4x3/qa.svg)}.flag-icon-qa.flag-icon-squared{background-image:url(../flags/1x1/qa.svg)}.flag-icon-re{background-image:url(../flags/4x3/re.svg)}.flag-icon-re.flag-icon-squared{background-image:url(../flags/1x1/re.svg)}.flag-icon-ro{background-image:url(../flags/4x3/ro.svg)}.flag-icon-ro.flag-icon-squared{background-image:url(../flags/1x1/ro.svg)}.flag-icon-rs{background-image:url(../flags/4x3/rs.svg)}.flag-icon-rs.flag-icon-squared{background-image:url(../flags/1x1/rs.svg)}.flag-icon-ru{background-image:url(../flags/4x3/ru.svg)}.flag-icon-ru.flag-icon-squared{background-image:url(../flags/1x1/ru.svg)}.flag-icon-rw{background-image:url(../flags/4x3/rw.svg)}.flag-icon-rw.flag-icon-squared{background-image:url(../flags/1x1/rw.svg)}.flag-icon-sa{background-image:url(../flags/4x3/sa.svg)}.flag-icon-sa.flag-icon-squared{background-image:url(../flags/1x1/sa.svg)}.flag-icon-sb{background-image:url(../flags/4x3/sb.svg)}.flag-icon-sb.flag-icon-squared{background-image:url(../flags/1x1/sb.svg)}.flag-icon-sc{background-image:url(../flags/4x3/sc.svg)}.flag-icon-sc.flag-icon-squared{background-image:url(../flags/1x1/sc.svg)}.flag-icon-sd{background-image:url(../flags/4x3/sd.svg)}.flag-icon-sd.flag-icon-squared{background-image:url(../flags/1x1/sd.svg)}.flag-icon-se{background-image:url(../flags/4x3/se.svg)}.flag-icon-se.flag-icon-squared{background-image:url(../flags/1x1/se.svg)}.flag-icon-sg{background-image:url(../flags/4x3/sg.svg)}.flag-icon-sg.flag-icon-squared{background-image:url(../flags/1x1/sg.svg)}.flag-icon-sh{background-image:url(../flags/4x3/sh.svg)}.flag-icon-sh.flag-icon-squared{background-image:url(../flags/1x1/sh.svg)}.flag-icon-si{background-image:url(../flags/4x3/si.svg)}.flag-icon-si.flag-icon-squared{background-image:url(../flags/1x1/si.svg)}.flag-icon-sj{background-image:url(../flags/4x3/sj.svg)}.flag-icon-sj.flag-icon-squared{background-image:url(../flags/1x1/sj.svg)}.flag-icon-sk{background-image:url(../flags/4x3/sk.svg)}.flag-icon-sk.flag-icon-squared{background-image:url(../flags/1x1/sk.svg)}.flag-icon-sl{background-image:url(../flags/4x3/sl.svg)}.flag-icon-sl.flag-icon-squared{background-image:url(../flags/1x1/sl.svg)}.flag-icon-sm{background-image:url(../flags/4x3/sm.svg)}.flag-icon-sm.flag-icon-squared{background-image:url(../flags/1x1/sm.svg)}.flag-icon-sn{background-image:url(../flags/4x3/sn.svg)}.flag-icon-sn.flag-icon-squared{background-image:url(../flags/1x1/sn.svg)}.flag-icon-so{background-image:url(../flags/4x3/so.svg)}.flag-icon-so.flag-icon-squared{background-image:url(../flags/1x1/so.svg)}.flag-icon-sr{background-image:url(../flags/4x3/sr.svg)}.flag-icon-sr.flag-icon-squared{background-image:url(../flags/1x1/sr.svg)}.flag-icon-ss{background-image:url(../flags/4x3/ss.svg)}.flag-icon-ss.flag-icon-squared{background-image:url(../flags/1x1/ss.svg)}.flag-icon-st{background-image:url(../flags/4x3/st.svg)}.flag-icon-st.flag-icon-squared{background-image:url(../flags/1x1/st.svg)}.flag-icon-sv{background-image:url(../flags/4x3/sv.svg)}.flag-icon-sv.flag-icon-squared{background-image:url(../flags/1x1/sv.svg)}.flag-icon-sx{background-image:url(../flags/4x3/sx.svg)}.flag-icon-sx.flag-icon-squared{background-image:url(../flags/1x1/sx.svg)}.flag-icon-sy{background-image:url(../flags/4x3/sy.svg)}.flag-icon-sy.flag-icon-squared{background-image:url(../flags/1x1/sy.svg)}.flag-icon-sz{background-image:url(../flags/4x3/sz.svg)}.flag-icon-sz.flag-icon-squared{background-image:url(../flags/1x1/sz.svg)}.flag-icon-tc{background-image:url(../flags/4x3/tc.svg)}.flag-icon-tc.flag-icon-squared{background-image:url(../flags/1x1/tc.svg)}.flag-icon-td{background-image:url(../flags/4x3/td.svg)}.flag-icon-td.flag-icon-squared{background-image:url(../flags/1x1/td.svg)}.flag-icon-tf{background-image:url(../flags/4x3/tf.svg)}.flag-icon-tf.flag-icon-squared{background-image:url(../flags/1x1/tf.svg)}.flag-icon-tg{background-image:url(../flags/4x3/tg.svg)}.flag-icon-tg.flag-icon-squared{background-image:url(../flags/1x1/tg.svg)}.flag-icon-th{background-image:url(../flags/4x3/th.svg)}.flag-icon-th.flag-icon-squared{background-image:url(../flags/1x1/th.svg)}.flag-icon-tj{background-image:url(../flags/4x3/tj.svg)}.flag-icon-tj.flag-icon-squared{background-image:url(../flags/1x1/tj.svg)}.flag-icon-tk{background-image:url(../flags/4x3/tk.svg)}.flag-icon-tk.flag-icon-squared{background-image:url(../flags/1x1/tk.svg)}.flag-icon-tl{background-image:url(../flags/4x3/tl.svg)}.flag-icon-tl.flag-icon-squared{background-image:url(../flags/1x1/tl.svg)}.flag-icon-tm{background-image:url(../flags/4x3/tm.svg)}.flag-icon-tm.flag-icon-squared{background-image:url(../flags/1x1/tm.svg)}.flag-icon-tn{background-image:url(../flags/4x3/tn.svg)}.flag-icon-tn.flag-icon-squared{background-image:url(../flags/1x1/tn.svg)}.flag-icon-to{background-image:url(../flags/4x3/to.svg)}.flag-icon-to.flag-icon-squared{background-image:url(../flags/1x1/to.svg)}.flag-icon-tr{background-image:url(../flags/4x3/tr.svg)}.flag-icon-tr.flag-icon-squared{background-image:url(../flags/1x1/tr.svg)}.flag-icon-tt{background-image:url(../flags/4x3/tt.svg)}.flag-icon-tt.flag-icon-squared{background-image:url(../flags/1x1/tt.svg)}.flag-icon-tv{background-image:url(../flags/4x3/tv.svg)}.flag-icon-tv.flag-icon-squared{background-image:url(../flags/1x1/tv.svg)}.flag-icon-tw{background-image:url(../flags/4x3/tw.svg)}.flag-icon-tw.flag-icon-squared{background-image:url(../flags/1x1/tw.svg)}.flag-icon-tz{background-image:url(../flags/4x3/tz.svg)}.flag-icon-tz.flag-icon-squared{background-image:url(../flags/1x1/tz.svg)}.flag-icon-ua{background-image:url(../flags/4x3/ua.svg)}.flag-icon-ua.flag-icon-squared{background-image:url(../flags/1x1/ua.svg)}.flag-icon-ug{background-image:url(../flags/4x3/ug.svg)}.flag-icon-ug.flag-icon-squared{background-image:url(../flags/1x1/ug.svg)}.flag-icon-um{background-image:url(../flags/4x3/um.svg)}.flag-icon-um.flag-icon-squared{background-image:url(../flags/1x1/um.svg)}.flag-icon-us{background-image:url(../flags/4x3/us.svg)}.flag-icon-us.flag-icon-squared{background-image:url(../flags/1x1/us.svg)}.flag-icon-uy{background-image:url(../flags/4x3/uy.svg)}.flag-icon-uy.flag-icon-squared{background-image:url(../flags/1x1/uy.svg)}.flag-icon-uz{background-image:url(../flags/4x3/uz.svg)}.flag-icon-uz.flag-icon-squared{background-image:url(../flags/1x1/uz.svg)}.flag-icon-va{background-image:url(../flags/4x3/va.svg)}.flag-icon-va.flag-icon-squared{background-image:url(../flags/1x1/va.svg)}.flag-icon-vc{background-image:url(../flags/4x3/vc.svg)}.flag-icon-vc.flag-icon-squared{background-image:url(../flags/1x1/vc.svg)}.flag-icon-ve{background-image:url(../flags/4x3/ve.svg)}.flag-icon-ve.flag-icon-squared{background-image:url(../flags/1x1/ve.svg)}.flag-icon-vg{background-image:url(../flags/4x3/vg.svg)}.flag-icon-vg.flag-icon-squared{background-image:url(../flags/1x1/vg.svg)}.flag-icon-vi{background-image:url(../flags/4x3/vi.svg)}.flag-icon-vi.flag-icon-squared{background-image:url(../flags/1x1/vi.svg)}.flag-icon-vn{background-image:url(../flags/4x3/vn.svg)}.flag-icon-vn.flag-icon-squared{background-image:url(../flags/1x1/vn.svg)}.flag-icon-vu{background-image:url(../flags/4x3/vu.svg)}.flag-icon-vu.flag-icon-squared{background-image:url(../flags/1x1/vu.svg)}.flag-icon-wf{background-image:url(../flags/4x3/wf.svg)}.flag-icon-wf.flag-icon-squared{background-image:url(../flags/1x1/wf.svg)}.flag-icon-ws{background-image:url(../flags/4x3/ws.svg)}.flag-icon-ws.flag-icon-squared{background-image:url(../flags/1x1/ws.svg)}.flag-icon-ye{background-image:url(../flags/4x3/ye.svg)}.flag-icon-ye.flag-icon-squared{background-image:url(../flags/1x1/ye.svg)}.flag-icon-yt{background-image:url(../flags/4x3/yt.svg)}.flag-icon-yt.flag-icon-squared{background-image:url(../flags/1x1/yt.svg)}.flag-icon-za{background-image:url(../flags/4x3/za.svg)}.flag-icon-za.flag-icon-squared{background-image:url(../flags/1x1/za.svg)}.flag-icon-zm{background-image:url(../flags/4x3/zm.svg)}.flag-icon-zm.flag-icon-squared{background-image:url(../flags/1x1/zm.svg)}.flag-icon-zw{background-image:url(../flags/4x3/zw.svg)}.flag-icon-zw.flag-icon-squared{background-image:url(../flags/1x1/zw.svg)}.flag-icon-es-ct{background-image:url(../flags/4x3/es-ct.svg)}.flag-icon-es-ct.flag-icon-squared{background-image:url(../flags/1x1/es-ct.svg)}.flag-icon-eu{background-image:url(../flags/4x3/eu.svg)}.flag-icon-eu.flag-icon-squared{background-image:url(../flags/1x1/eu.svg)}.flag-icon-gb-eng{background-image:url(../flags/4x3/gb-eng.svg)}.flag-icon-gb-eng.flag-icon-squared{background-image:url(../flags/1x1/gb-eng.svg)}.flag-icon-gb-nir{background-image:url(../flags/4x3/gb-nir.svg)}.flag-icon-gb-nir.flag-icon-squared{background-image:url(../flags/1x1/gb-nir.svg)}.flag-icon-gb-sct{background-image:url(../flags/4x3/gb-sct.svg)}.flag-icon-gb-sct.flag-icon-squared{background-image:url(../flags/1x1/gb-sct.svg)}.flag-icon-gb-wls{background-image:url(../flags/4x3/gb-wls.svg)}.flag-icon-gb-wls.flag-icon-squared{background-image:url(../flags/1x1/gb-wls.svg)}.flag-icon-un{background-image:url(../flags/4x3/un.svg)}.flag-icon-un.flag-icon-squared{background-image:url(../flags/1x1/un.svg)}
+
+ 
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  -moz-backface-visibility: hidden;
+/* fix firefox animation glitch */ }
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper,  .owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+.owl-carousel .owl-item img {
+}
+.owl-carousel .owl-nav.disabled,  .owl-carousel .owl-dots.disabled {
+  display: none;
+}
+.owl-carousel .owl-nav .owl-prev,  .owl-carousel .owl-nav .owl-next,  .owl-carousel .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+ @keyframes fadeOut {
+ 0% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+/*
+ *  Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+/*
+ *  Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+/*
+ *  Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 0px;
+  text-indent: -999px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  margin: -24px 0 0 0;
+  background-color: rgba(0,0,0,.5);
+  border:none;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: all ease-in 200ms;
+  -moz-transition: all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+}
+.owl-carousel .owl-nav .owl-next {
+  left: auto;
+  right: -25px;
+}
+.owl-carousel .owl-nav .owl-prev:after, .owl-carousel .owl-nav .owl-next:after {
+  content: "";
+  border-left: 2px solid #666;
+  border-bottom: 2px solid #666;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  margin: -4px 0 0 -2px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  transition: all ease-in 200ms;
+  -moz-transition: all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+}
+.owl-carousel .owl-nav .owl-next:after {
+  margin: -4px 0 0 -4px;
+  transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+}
+.owl-carousel {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #000
+}
+.owl-carousel .owl-nav .owl-prev:hover:after {
+}
+.owl-carousel .grabbing {
+  cursor: move;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.owl-carousel img {
+  max-width: 100%;
+}
+ @media only screen and (min-width: 1600px) {
+.owl-carousel .owl-nav .owl-prev {
+  left: -55px;
+}
+.owl-carousel .owl-nav .owl-next {
+  right: -55px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.owl-carousel .owl-nav .owl-prev {
+  left: -20px;
+}
+.owl-carousel .owl-nav .owl-next {
+  right: -20px;
+}
+}
+@media only screen and (max-width: 767px) {
+.owl-carousel .owl-nav .owl-prev {
+  left: 0px;
+}
+.owl-carousel .owl-nav .owl-next {
+  right: 0px;
+}
+}
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border: 1px solid #999;
+  display: inline-block;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  transition: background-color ease-in 200ms;
+  -moz-transition: background-color ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: background-color ease-in 200ms; /* Safari and Chrome */
+  -o-transition: background-color ease-in 200ms; /* Opera */
+  -ms-transition: background-color ease-in 200ms; /* IE9? */
+}
+.owl-carousel .owl-dot.active {
+  background-color: #999;
+  border-color: #999;
+}
+
+.gamefeatures .dg-testimonials01 .owl-nav .owl-prev:before,
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next:before {
+  content: "";
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  margin: -4px 0 0 -2px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  transition: all ease-in 200ms;
+  -moz-transition: all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+  
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-prev:hover:before,
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next:hover:before{
+	border-color: #008ad3;
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next:before {
+    margin: -4px 0 0 -4px;
+    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-prev,
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next{
+  display: block;
+  opacity: 1 !important;
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-prev:before {
+    width: 27px;
+    height: 27px;
+    margin: -13px 0 0 -8px;
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next:before {
+    width: 27px;
+    height: 27px;
+    margin: -13px 0 0 -20px;
+}
+
+.gamefeatures .dg-testimonials01 .owl-nav .owl-prev{
+	border:none;
+}
+.gamefeatures .dg-testimonials01 .owl-nav .owl-next{
+ border:none;
+}
+
+.detail_box .icon_box_line .owl-carousel .owl-nav .owl-prev:before,.detail_box .icon_box_line .owl-carousel .owl-nav .owl-next:before{
+ 	display: none !important;
+}
+
+
+
+.PlayngoGames {
+	margin:20px 0px 10px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.PlayngoGames:after {
+	clear:both;
+	content:".";
+	height:0px;
+	font-size:0px;
+	visibility:hidden;
+	display:block;
+}
+.PlayngoGames .filters {
+	overflow:hidden;
+  float: left;
+}
+.PlayngoGames .filters a{
+  color:#FFF;
+  display: inline-block;
+  margin-right: 30px ;
+  padding: 4px 0px ;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in 200ms;
+  -moz-transition: all ease-in 200ms;
+  -webkit-transition: all ease-in 200ms;
+  -o-transition: all ease-in 200ms;
+  -ms-transition: all ease-in 200ms;
+	float:left;
+}
+.PlayngoGames .filters a:first-child{
+	border-left:none;
+}
+.PlayngoGames .filters a.active, 
+.PlayngoGames .filters a.active:hover , 
+.PlayngoGames .filters a:hover {
+  border-bottom: 2px solid #20a3fc;
+  color: #20a3fc;
+  text-decoration: none;
+  
+}
+
+.PlayngoGames .filter_block{
+  margin-bottom: 25px;
+  
+}
+.PlayngoGames .sort_box {
+	float:right;
+  margin:4px 0 0;
+  padding: 0;
+}
+.PlayngoGames .sort_box li {
+	padding:0px;
+	display:inline-block;
+	color:#94b1cf;
+	text-decoration:none;
+	float:left;
+  margin-left: 35px;
+}
+.PlayngoGames .sort_box li a {
+	display:inline-block;
+	color:#94b1cf;
+	text-decoration:none;
+	line-height:20px;
+  vertical-align: middle;
+}
+.PlayngoGames .sort_box li a:hover {
+	color:#20a3fc;
+}
+.PlayngoGames .sort_box li:first-child{
+	border-left:none;
+}
+
+.PlayngoGames .filter-switch {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: #3b5065;
+    position: relative;
+    margin: 0px 7px;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.PlayngoGames .filter-switch span {
+    width: 12px;
+    height: 12px;
+    background-color: #7dbdff;
+    position: absolute;
+    top: -4px;
+    left: 24px;
+    right:auto;
+  -moz-transition: 	left ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: left ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 		left ease-in 200ms; /* Opera */
+  -ms-transition: 	left ease-in 200ms; /* IE9? */
+  transition: 		left ease-in 200ms;
+}
+.PlayngoGames .filter-switch:after{
+  content: "";
+  position: absolute;
+  top:-4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+}
+
+.PlayngoGames .active + .filter-switch span {
+    left: 3px;
+    right: auto;
+}
+.PlayngoGames .game-main {
+	position:relative;
+}
+.PlayngoGames .game-main .game-items {
+	width:0px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+	vertical-align:top;
+}
+.PlayngoGames .game-main img {
+	border: 0 none;
+	height:auto;
+	vertical-align: top;
+	max-width:100%;
+}
+.PlayngoGames .portfolio_descr .date{
+	margin-bottom:8px;
+
+}
+.PlayngoGames .portfolio_descr p{ 
+	font-size:13px;
+	margin-bottom:8px;
+}
+.PlayngoGames .portfolio_descr {
+	padding:18px 18px 5px;
+	color:#999999;
+	background-color:#FFF;
+	transition: 		all ease-in 200ms;
+	-moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		all ease-in 200ms; /* Opera */
+	-ms-transition: 	all ease-in 200ms; /* IE9? */
+}
+.PlayngoGames .portfolio_descr .name, 
+.PlayngoGames .portfolio_descr .name a {
+	font-size:13px;
+	line-height:1.2;
+	margin:0px;
+	text-transform:uppercase;
+	color:#666666;
+	margin-bottom:8px;
+	transition: 		color ease-in 200ms;
+	-moz-transition: 	color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition:   color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 	color ease-in 200ms; /* Opera */
+	-ms-transition: color ease-in 200ms; /* IE9? */
+}
+.PlayngoGames .view-tenth:hover .portfolio_descr {
+	color:#FFF;
+	background:#ee7624;
+}
+.PlayngoGames .view-tenth:hover .portfolio_descr .name, 
+.PlayngoGames .view-tenth:hover .portfolio_descr .name a {
+	color:#FFF;
+}
+.PlayngoGames .view-tenth {
+}
+.PlayngoGames .portfolio_categories {
+	color:#e1e5e7;
+	padding:5px 0px 8px;
+}
+.PlayngoGames .portfolio_categories span, 
+.PlayngoGames .portfolio_categories a:link, 
+.PlayngoGames .portfolio_categories a:active, 
+.PlayngoGames .portfolio_categories a:visited, 
+.PlayngoGames .portfolio_descr .name a:link, 
+.PlayngoGames .portfolio_descr .name a:active, 
+.PlayngoGames .portfolio_descr .name a:visited {
+	color:#373a41;
+	text-decoration:none;
+}
+.PlayngoGames .portfolio_categories a:hover {
+	text-decoration: underline
+}
+.PlayngoGames .portfolio_descr .name a:hover {
+	text-decoration: underline
+}
+.PlayngoGames .item_image {
+	position:relative;
+}
+.PlayngoGames .item_image .image_dim {
+	transition: 		all ease-in 200ms;
+	-moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		all ease-in 200ms; /* Opera */
+	-ms-transition: 	all ease-in 200ms; /* IE9? */
+	background:url(images/ico.png) no-repeat center center;
+	background-color:rgba(0,0,0,0.5);
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.PlayngoGames .view-tenth:hover .image_dim {
+	opacity:1;
+}
+.PlayngoGames .item_image a, 
+.PlayngoGames .item_image a:hover {
+	text-decoration:none;
+}
+.PlayngoGames .PhotoPage .pager {
+	border:1px solid #e1e5e7;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	padding:0px 10px;
+	margin:5px 0px;
+	overflow:hidden;
+	display:inline-block;
+}
+.PlayngoGames .PhotoPage a, 
+.PlayngoGames .PhotoPage span {
+	list-style:none;
+	border-left:1px solid #e1e5e7;
+	display:inline-block;
+	padding:6px 0px 6px 10px;
+	margin-left:10px;
+}
+.PlayngoGames .PhotoPage a,
+.PlayngoGames .PhotoPage span {
+	display:inline;
+}
+@-webkit-keyframes loading-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+   100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loading-rotate{
+  0% {
+    -moz-transform: rotate(0);
+  }
+   100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes loading-rotate{
+  0% {
+    transform: rotate(0);
+  }
+   100% {
+    transform: rotate(360deg);
+  }
+}
+
+.PlayngoGames .game-main.xbd-loading:before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 5px solid #E3E3E3;
+  border-top-color:#555;
+  border-left-color:#555;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-animation: loading-rotate 0.7s infinite;
+  -moz-animation: loading-rotate 0.7s infinite;
+  animation: loading-rotate 0.7s infinite;
+  z-index: 101;
+}
+
+
+.PlayngoGames .meassage_box {
+	text-align:center;
+}
+.PlayngoGames .moremeassage{
+	color:#FFF;
+	padding:0px 20px;
+	font-size:14px;
+	letter-spacing:3px;
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	margin:10px auto;
+	display:none;
+	transition: 		all ease-in 200ms;
+	-webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+	position:relative;
+}
+.PlayngoGames .moremeassage:hover{
+	text-decoration:none;
+}
+.PlayngoGames .moremeassage.active {
+	display:inline-block;
+}
+
+@keyframes rotatelogin {
+	0% {
+		transform:rotate(0deg)
+	}
+	100%{
+		transform:rotate(360deg)
+	}
+	
+}
+@-webkit-keyframes rotatelogin {
+	0% {
+		-webkit-transform:rotate(0deg)
+	}
+	100%{
+		-webkit-transform:rotate(359deg)
+	}
+}
+
+.PlayngoGames .moremeassage span{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+	line-height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-name: rotatelogin;
+	animation-name: rotatelogin;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	animation-timing-function:linear;
+	position:relative;
+	letter-spacing:0;
+	background:url(images/refresh.png) no-repeat center center;
+	display:none;
+}
+
+.PlayngoGames.xbd-loading2 .moremeassage span{
+	display:inline-block
+}
+
+
+.PlayngoGames .pro-game-pic img{
+  width: 100%;
+}
+.PlayngoGames .pic-info h3{
+  margin-bottom: 0px;
+}
+.PlayngoGames .pic-info .flex{
+	position: relative;
+	z-index: 903
+}
+.PlayngoGames .pic-info{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  opacity: 0;
+  -moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 	all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+  transition: 		all ease-in 200ms;
+  z-index: 3;
+}
+.PlayngoGames .pro-game-pic:hover .pic-info{
+  opacity: 1;
+}
+.PlayngoGames .pro-game-pic:after{
+  content: "";
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 	all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+  transition: 		all ease-in 200ms;
+}
+.PlayngoGames .pro-game-pic:hover:after{
+  opacity: 1;
+}
+
+.PlayngoGames .description{
+  margin: auto;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.PlayngoGames .search_box{
+  float: right;
+  margin-left: 25px;
+}
+.PlayngoGames .search_box #searchBox{
+	position: relative;
+
+}
+.PlayngoGames .search_box #searchBox .moduleTextBox{
+	font-size: 13px;
+	line-height: 16px;
+	padding: 9px 0px;
+  -moz-border-radius:0;
+  -webkit-border-radius:0; 
+	border-radius:0;
+	background:transparent;
+	color: #fff;
+	width: 140px;
+	margin-right: 40px;
+	border:none;
+  border-bottom: 1px solid #38618c;
+}
+.PlayngoGames .search_box #searchBox .search{
+	position:absolute;
+	right:0;
+	top: 4px;
+	font-size: 16px; 
+	left: auto;
+	color: #20A3FC;
+  background: url(images/search.png) no-repeat center center;
+}
+.PlayngoGames .search_box #searchBox .search.active{
+  background-image: url(images/close.png) 
+}
+
+.PlayngoGames .search_box #searchBox .search:before{
+  content:none;
+}
+.PlayngoGames .pic-info .flex > a:hover{
+  text-decoration: none;
+}
+.PlayngoGames .pic-info .flex > a{
+  margin:0 40px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.PlayngoGames .pro-game-pic .play-icon{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0px auto 8px;
+  background: url(images/play.png)  no-repeat center center;
+  background-size: cover;
+  opacity: 0.7;
+  -moz-transition: 	all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 	all ease-in 200ms; /* Opera */
+  -ms-transition: all ease-in 200ms; /* IE9? */
+  transition: 		all ease-in 200ms;
+ 
+    
+}
+.PlayngoGames .pic-info .flex > a:last-child > .play-icon{
+	background-image: url(images/i.png);
+}
+.PlayngoGames .pro-game-pic .play-icon:hover{
+  opacity: 1
+}
+
+.PlayngoGames .new_game{
+	background: url(images/new_rt.png) 0 0 no-repeat;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: -14px;
+	top: -14px;
+	z-index: 4;
+	background-size: cover;
+}
+.PlayngoGames .big-font .new_game{
+	width: 134px;
+	height: 134px;
+	right: -14px;
+	top: -14px;
+}
+
+.PlayngoGames .pro-game-pic .name a{
+  font-size: 32px;
+  color: #ffffff;  
+  font-family: "bebas_neuebold"
+}
+
+.mfp-inline-holder .white-popup.mfp-with-anim{
+	max-width: 1050px;
+	background: #000;
+}
+.PlayngoGames button.mfp-close{
+	color: #fff;
+}
+
+.PlayngoGames .img-box{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+
+.PlayngoGames .game-items-height2{
+  
+}
+
+
+@media only screen and (max-width: 1700px) {
+  .PlayngoGames .pro-game-pic .play-icon{
+    width: 100px;
+    height: 100px;
+  }
+  .PlayngoGames .pro-game-pic .name a{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+	.PlayngoGames .pro-game-pic .play-icon{
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+@media only screen and (max-width: 1500px) {
+	.PlayngoGames .pro-game-pic .play-icon{
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+@media only screen and (max-width: 1400px) {
+	.PlayngoGames .pro-game-pic .play-icon{
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+	.PlayngoGames .pro-game-pic .play-icon{
+		margin-bottom: 10px !important;
+	}
+	.PlayngoGames .description{
+		line-height: 1.5;
+	}
+	.PlayngoGames .name{
+		margin:0px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.PlayngoGames .pro-game-pic .play-icon{
+		margin-bottom: 5px !important;
+	}
+	.PlayngoGames .description{
+		line-height: 1.2 !important;
+	}
+}
+
+.PlayngoGames .filters{
+  
+}
+.PlayngoGames .filters-select{
+  display: none;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.PlayngoGames .game-items{
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  opacity: 0;
+}
+.PlayngoGames .game-items.animat-order{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition:-webkit-transform ease-in 400ms,opacity ease-in 400ms; /* Safari and Chrome */
+  transition: 		transform ease-in 400ms,opacity ease-in 400ms;
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .icon_box_line .dg-line12{
+  margin:23px 0 23px;
+}
+.PlayngoGames .filters{
+    display: none;
+  
+}
+.PlayngoGames .filters-select{
+  display:block;
+}
+  .PlayngoGames .search_box #searchBox .moduleTextBox{
+    width: 100%!important;
+  }
+  .PlayngoGames .search_box{
+    width: 100%;
+  }
+}
+/**** Isotope CSS3 transitions ****/
+
+@media (max-width: 767px) {
+	.PlayngoGames .search_box{
+		float:left;
+		margin-left: 0px;
+	}
+	.PlayngoGames .sort_box{
+		clear: left;
+	}
+	.PlayngoGames .sort_box li{
+		margin-left: 0px;
+		display: block !important;
+    margin-right: 20px;
+
+	}
+	.PlayngoGames ul.filters {
+		border:none;
+		border-radius:0px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+	}
+	.PlayngoGames ul.filters li {
+		border:1px solid #e1e5e7;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		margin:0px 5px 5px 0px;
+	}
+	.PlayngoGames ul.filters li a {
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+	}
+	.PlayngoGames .filters li.selected.first a, 
+	.PlayngoGames .filters li.selected:first-child a {
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+	}
+	.PlayngoGames .filters li.selected.last a, 
+	.PlayngoGames .filters li.selected:last-child a {
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+	}
+	.PlayngoGames .filter_block ul.sort_box {
+		float:left;
+	}
+}
+.mfp-inline-holder button.mfp-close{
+	color: #fff;
+}
+.no_before{
+	cursor: pointer;
+	z-index: 1046;
+	font-size: 20px !important;
+		transform:translateZ(1000px);
+-ms-transform:translateZ(1000px); 	/* IE 9 */
+-moz-transform:translateZ(1000px); 	/* Firefox */
+-webkit-transform:translateZ(1000px); /* Safari 和 Chrome */
+-o-transform:translateZ(1000px); 	/* Opera */
+}
+.no_before:before{
+	display: none !important;
+}
+.mfp_popup_game{
+  width: 1050px;
+  max-width: 98%;
+  margin: auto;
+  position: relative;
+  background-color: #000;
+}
+.game-iframe{
+  background-color: #000;
+  position: relative;
+}
+.game-info{
+  position: absolute;
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  padding: 10px;
+  color: #AFA8A8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.game-BackDrop{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.mfp-wrap{
+  top:0!important;
+  position: fixed!important;
+}
+
+.game-info .title{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #AFA8A8;
+  font-weight: bold;
+  line-height: 22px;
+}
+.game-info .description{
+  font-size: 10px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.game-info .summary{
+  font-size: 12px;
+  line-height: 1.6;
+  
+}
+.game-info .rtp{
+  width: 80px;
+  height: 80px;
+  margin:20px auto;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  text-align: center;
+  background: url(images/rtp-bg.png) no-repeat center;
+  background-size: cover;
+  border:1px solid transparent;
+}
+.game-info .rtp .value{
+  margin-top: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2px;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+.game-info .rtp .text{
+  font-size: 18px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.playgame_attribute .logolist{
+  margin: 0 ;
+  padding: 0;
+}
+.playgame_attribute .logolist .label_name span{
+	display: block;
+  width: 50%;
+  float: left;
+  height:43px;
+  margin:  0;
+  list-style: none;
+  background: url(images/logo.png) no-repeat ;
+  -moz-transition: 	transform ease-in 200ms; /* Firefox 4 */
+  -webkit-transition:  transform ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 		transform ease-in 200ms; /* Opera */
+  -ms-transition: 	transform ease-in 200ms; /* IE9? */
+  transition: 		transform ease-in 200ms;
+}
+.playgame_attribute .logolist .label_name .aamslogo {
+  background-position: center 0px;
+}
+.playgame_attribute .logolist .label_name .agcclogo {
+  background-position: center -43px;
+}
+.playgame_attribute .logolist .label_name .dgalogo {
+  background-position: center -86px;
+}
+.playgame_attribute .logolist .label_name .mgalogo {
+  background-position: center -126px;
+}
+.playgame_attribute .logolist .label_name .ukgclogo {
+  background-position: center -172px;
+}
+/*.playgame_attribute .logolist .label_name span:hover{
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}*/
+.detail_box ul.playgame_attribute li.logolist > div.label_name{
+	padding-right: 8px !important;
+}
+
+
+.game-info .language{
+   width: 200px;
+}
+.game-info .full-screen{
+  width: 200px;
+}
+.game-languages{
+  display: none;
+}
+.game-info .language .game-languages{
+  display:block;
+}
+.game-info .game-languages,
+.full-screen .full-btn,
+.game-info .return_game{
+  color: #a79787;
+  background-color: #000;
+  border: 1px solid #2e2e2e;
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  cursor: pointer;
+}
+.game-info .return_game{
+  margin: 10px 15px 0;
+  padding:0 5px;
+  text-align: center;
+  display:none;
+}
+.game-info .return_game.active{
+  display:block;
+}
+.game-info .return_game.active ~ .language,
+.game-info .return_game.active ~ .full-screen{
+  display: none;
+}
+
+
+.play-youtube + .game-languages,
+.full-screen .full-btn{
+   width: 150px;
+}
+.full-screen .full-btn{
+  padding: 0px 5px;
+  -moz-transition: all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 		all ease-in 200ms; /* Opera */
+  -ms-transition: 	all ease-in 200ms; /* IE9? */
+  transition: 		all ease-in 200ms;
+}
+.game-info .language .play-youtube,
+.full-screen .fa-mobile-phone{
+  width: 40px;
+  height: 35px;
+  line-height: 35px;
+  text-align:center;
+  border: 1px solid #2e2e2e;
+  float: right;
+  cursor: pointer;
+  -moz-transition: all ease-in 200ms; /* Firefox 4 */
+  -webkit-transition: all ease-in 200ms; /* Safari and Chrome */
+  -o-transition: 		all ease-in 200ms; /* Opera */
+  -ms-transition: 	all ease-in 200ms; /* IE9? */
+  transition: 		all ease-in 200ms;
+}
+.game-info .language .play-youtube:hover,
+.full-screen .fa-mobile-phone:hover,
+.full-screen .full-btn:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.full-screen .fa-mobile-phone{
+  font-size: 20px;
+  text-decoration: none!important;
+  color: inherit!important;
+}
+.game-info .language{
+  margin: 10px 15px 0;
+}
+.game-info .language:after,
+.full-screen:after{
+	clear:both;
+	content:".";
+	height:0px;
+	font-size:0px;
+	visibility:hidden;
+	display:block;
+}
+.game-info .full-screen{
+  margin: 10px 15px 0;
+}
+.game-info .summary{
+  height:225px;
+  overflow: hidden;
+}
+/*.game-iframe .responsive-video{
+      padding-bottom: 70%;
+}
+@media only screen and (max-width: 991px) {
+  .game-iframe .responsive-video{
+    padding-bottom: 75%;
+}
+}*/
+
+.mfp-fullscreen{
+  
+}
+
+.mfp-content{
+  transform: none!important;
+}
+
+
+.mfp-fullscreen .game-iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding-bottom: 30px;
+}
+.mfp-fullscreen  .responsive-video{
+  padding-bottom: 0;
+  height: 100%;
+}
+.mfp-fullscreen .game-info .title{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  z-index: 100;
+  line-height: 30px;
+}
+.mfp-fullscreen button.mfp-close{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  height: 34px;
+}
+.mfp-fullscreen .full-btn{
+  position: fixed;
+  top: auto;
+  bottom: 2px;
+  right: 50px;
+  z-index: 100;
+  height: 26px;
+  line-height: 26px;
+  width: auto;
+}
+.info-bottom{
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+#flashobject .loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 30px;
+  margin: -15px 0 0 -40px;;
+}
+
+@keyframes flashobjectloading{0%,100%,80%{transform:scale(0)}40%{transform:scale(1)}}
+
+#flashobject .loading:after,
+#flashobject .loading:before,
+#flashobject .loading i{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #EC2529;
+    border-radius: 100%;
+    display: inline-block;
+    animation: flashobjectloading 1.4s infinite ease-in-out;
+    animation-fill-mode: both;
+    margin: 0px 3px;
+}
+#flashobject .loading:before {
+    animation-delay: -.32s;
+}
+#flashobject .loading i {
+    animation-delay: -.16s;
+}
+ 
+
+
+.mfp-wrap{
+  overflow-y: auto;
+}
+.mfp-fullscreen.mfp-wrap{
+  overflow: hidden;
+}
+.mfp-wrap .mfp-close{
+  font-size: 0;
+  top:0px !important;
+	right:0px !important;
+}
+.mfp-wrap .mfp-close:before {
+ font:normal normal normal 14px/1 FontAwesome;
+ content: "\f011";
+  font-size: 20px;
+  display: inline-block;
+  line-height: 44px;
+}
+
+
+.PlayngoGames.loading .game-main{
+  min-height: 400px;
+}
+
+@-webkit-keyframes loading-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+   100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loading-rotate{
+  0% {
+    -moz-transform: rotate(0);
+  }
+   100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes loading-rotate{
+  0% {
+    transform: rotate(0);
+  }
+   100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.PlayngoGames.loading:before{
+   content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 5px solid #E3E3E3;
+  border-top-color:#555;
+  border-left-color:#555;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -20px;
+  -webkit-animation: loading-rotate 0.7s infinite;
+  -moz-animation: loading-rotate 0.7s infinite;
+  animation: loading-rotate 0.7s infinite;
+  z-index: 101;
+}
+
+@media only screen and (max-width: 767px) {
+
+.game-languages{
+  display: block;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+}
+
+.game-info-box{
+  width: 230px;
+}
+
+@media only screen and (max-width:1060px) {
+  .game-iframe{
+    margin: 0;
+  }
+  .game-info{
+    width: 0px;
+    right: -15px;
+    -moz-transition: 	width ease-in 200ms; /* Firefox 4 */
+    -webkit-transition: width ease-in 200ms; /* Safari and Chrome */
+    -o-transition: 		width ease-in 200ms; /* Opera */
+    -ms-transition: 	width ease-in 200ms; /* IE9? */
+    transition: 		width ease-in 200ms;
+  }
+  .game-info:hover{
+    width: 250px;
+  }
+  .game-info-box{
+    opacity: 0;
+ }
+  .game-info-box:hover{
+    opacity: 1;
+  }
+
+}
+
+
+
+
+
+.mCustomScrollbar {
+ -ms-touch-action:pinch-zoom;
+ touch-action:pinch-zoom
+}
+.mCustomScrollbar.mCS_no_scrollbar,.mCustomScrollbar.mCS_touch_action {
+ -ms-touch-action:auto;
+ touch-action:auto
+}
+.mCustomScrollBox {
+ position:relative;
+ overflow:hidden;
+ height:100%;
+ max-width:100%;
+ outline:0;
+ direction:ltr
+}
+.mCSB_container {
+ overflow:hidden;
+ width:auto;
+ height:auto
+}
+.mCSB_inside>.mCSB_container {
+ margin-right:30px
+}
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+ margin-right:0
+}
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container {
+ margin-right:0;
+ margin-left:30px
+}
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+ margin-left:0
+}
+.mCSB_scrollTools {
+ position:absolute;
+ width:16px;
+ height:auto;
+ left:auto;
+ top:0;
+ right:0;
+ bottom:0;
+ opacity:.75;
+ filter:"alpha(opacity=75)";
+ -ms-filter:"alpha(opacity=75)"
+}
+.mCSB_outside+.mCSB_scrollTools {
+ right:-26px
+}
+.mCS-dir-rtl>.mCSB_inside>.mCSB_scrollTools,.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+ right:auto;
+ left:0
+}
+.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools {
+ left:-26px
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+ position:absolute;
+ top:0;
+ left:0;
+ bottom:0;
+ right:0;
+ height:auto
+}
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+ margin:20px 0
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+ width:2px;
+ height:100%;
+ margin:0 auto;
+ -webkit-border-radius:16px;
+ -moz-border-radius:16px;
+ border-radius:16px
+}
+.mCSB_scrollTools .mCSB_dragger {
+ cursor:pointer;
+ width:100%;
+ height:30px;
+ z-index:1
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ position:relative;
+ width:4px;
+ height:100%;
+ margin:0 auto;
+ -webkit-border-radius:16px;
+ -moz-border-radius:16px;
+ border-radius:16px;
+ text-align:center
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+ width:12px
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ width:8px
+}
+.mCSB_scrollTools .mCSB_buttonDown,.mCSB_scrollTools .mCSB_buttonUp {
+ display:block;
+ position:absolute;
+ height:20px;
+ width:100%;
+ overflow:hidden;
+ margin:0 auto;
+ cursor:pointer
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+ bottom:0
+}
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+ margin-right:0;
+ margin-bottom:30px
+}
+.mCSB_horizontal.mCSB_outside>.mCSB_container {
+ min-height:100%
+}
+.mCSB_horizontal>.mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+ margin-bottom:0
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ width:auto;
+ height:16px;
+ top:auto;
+ right:0;
+ bottom:0;
+ left:0
+}
+.mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal,.mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ bottom:-26px
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a+.mCSB_draggerContainer {
+ margin:0 20px
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:2px;
+ margin:7px 0
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+ width:30px;
+ height:100%;
+ left:0
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ width:100%;
+ height:4px;
+ margin:6px auto
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+ height:12px;
+ margin:2px auto
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ height:8px;
+ margin:4px 0
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+ display:block;
+ position:absolute;
+ width:20px;
+ height:100%;
+ overflow:hidden;
+ margin:0 auto;
+ cursor:pointer
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+ left:0
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+ right:0
+}
+.mCSB_container_wrapper {
+ position:absolute;
+ height:auto;
+ width:auto;
+ overflow:hidden;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ margin-right:30px;
+ margin-bottom:30px
+}
+.mCSB_container_wrapper>.mCSB_container {
+ padding-right:30px;
+ padding-bottom:30px;
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box
+}
+.mCSB_vertical_horizontal>.mCSB_scrollTools.mCSB_scrollTools_vertical {
+ bottom:20px
+}
+.mCSB_vertical_horizontal>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ right:20px
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden+.mCSB_scrollTools.mCSB_scrollTools_vertical {
+ bottom:0
+}
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal,.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden+.mCSB_scrollTools~.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ right:0
+}
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ left:20px
+}
+.mCS-dir-rtl>.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden+.mCSB_scrollTools~.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ left:0
+}
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container_wrapper {
+ margin-right:0;
+ margin-left:30px
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden>.mCSB_container {
+ padding-right:0
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden>.mCSB_container {
+ padding-bottom:0
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+ margin-right:0;
+ margin-left:0
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+ margin-bottom:0
+}
+.mCSB_scrollTools,.mCSB_scrollTools .mCSB_buttonDown,.mCSB_scrollTools .mCSB_buttonLeft,.mCSB_scrollTools .mCSB_buttonRight,.mCSB_scrollTools .mCSB_buttonUp,.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ -webkit-transition:opacity .2s ease-in-out,background-color .2s ease-in-out;
+ -moz-transition:opacity .2s ease-in-out,background-color .2s ease-in-out;
+ -o-transition:opacity .2s ease-in-out,background-color .2s ease-in-out;
+ transition:opacity .2s ease-in-out,background-color .2s ease-in-out
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar {
+ -webkit-transition:width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
+ -moz-transition:width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
+ -o-transition:width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out;
+ transition:width .2s ease-out .2s,height .2s ease-out .2s,margin-left .2s ease-out .2s,margin-right .2s ease-out .2s,margin-top .2s ease-out .2s,margin-bottom .2s ease-out .2s,opacity .2s ease-in-out,background-color .2s ease-in-out
+}
+.mCS-autoHide>.mCustomScrollBox>.mCSB_scrollTools,.mCS-autoHide>.mCustomScrollBox~.mCSB_scrollTools {
+ opacity:0;
+ filter:"alpha(opacity=0)";
+ -ms-filter:"alpha(opacity=0)"
+}
+.mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools,.mCS-autoHide:hover>.mCustomScrollBox~.mCSB_scrollTools,.mCustomScrollBox:hover>.mCSB_scrollTools,.mCustomScrollBox:hover~.mCSB_scrollTools,.mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag,.mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag {
+ opacity:1;
+ filter:"alpha(opacity=100)";
+ -ms-filter:"alpha(opacity=100)"
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.4);
+ filter:"alpha(opacity=40)";
+ -ms-filter:"alpha(opacity=40)"
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.75);
+ filter:"alpha(opacity=75)";
+ -ms-filter:"alpha(opacity=75)"
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.85);
+ filter:"alpha(opacity=85)";
+ -ms-filter:"alpha(opacity=85)"
+}
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.9);
+ filter:"alpha(opacity=90)";
+ -ms-filter:"alpha(opacity=90)"
+}
+.mCSB_scrollTools .mCSB_buttonDown,.mCSB_scrollTools .mCSB_buttonLeft,.mCSB_scrollTools .mCSB_buttonRight,.mCSB_scrollTools .mCSB_buttonUp {
+ background-image:url(mCSB_buttons.png);
+ background-repeat:no-repeat;
+ opacity:.4;
+ filter:"alpha(opacity=40)";
+ -ms-filter:"alpha(opacity=40)"
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:0 0
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:0 -20px
+}
+.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:0 -40px
+}
+.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:0 -56px
+}
+.mCSB_scrollTools .mCSB_buttonDown:hover,.mCSB_scrollTools .mCSB_buttonLeft:hover,.mCSB_scrollTools .mCSB_buttonRight:hover,.mCSB_scrollTools .mCSB_buttonUp:hover {
+ opacity:.75;
+ filter:"alpha(opacity=75)";
+ -ms-filter:"alpha(opacity=75)"
+}
+.mCSB_scrollTools .mCSB_buttonDown:active,.mCSB_scrollTools .mCSB_buttonLeft:active,.mCSB_scrollTools .mCSB_buttonRight:active,.mCSB_scrollTools .mCSB_buttonUp:active {
+ opacity:.9;
+ filter:"alpha(opacity=90)";
+ -ms-filter:"alpha(opacity=90)"
+}
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.15)
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-80px 0
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-80px -20px
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-80px -40px
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-80px -56px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail,.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail {
+ width:4px;
+ background-color:#fff;
+ background-color:rgba(255,255,255,.1);
+ -webkit-border-radius:1px;
+ -moz-border-radius:1px;
+ border-radius:1px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:4px;
+ background-color:#fff;
+ background-color:rgba(255,255,255,.75);
+ -webkit-border-radius:1px;
+ -moz-border-radius:1px;
+ border-radius:1px
+}
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:4px;
+ margin:6px auto
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.85)
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-light-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.9)
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-32px 0
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-32px -20px
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-40px -40px
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-40px -56px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.1);
+ -webkit-border-radius:1px;
+ -moz-border-radius:1px;
+ border-radius:1px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75);
+ -webkit-border-radius:1px;
+ -moz-border-radius:1px;
+ border-radius:1px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-112px 0
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-112px -20px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-120px -40px
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-120px -56px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail,.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail {
+ width:4px;
+ background-color:#fff;
+ background-color:rgba(255,255,255,.1);
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:6px;
+ background-color:#fff;
+ background-color:rgba(255,255,255,.75);
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px
+}
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:4px;
+ margin:6px 0
+}
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ width:100%;
+ height:6px;
+ margin:5px auto
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.85)
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.9)
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-16px 0
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-16px -20px
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-20px -40px
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-20px -56px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.1);
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75);
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-96px 0
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-96px -20px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-100px -40px
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-100px -56px
+}
+.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.1)
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:2px
+}
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%
+}
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ width:100%;
+ height:2px;
+ margin:7px auto
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.15)
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-80px 0
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-80px -20px
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-80px -40px
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-80px -56px
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.15)
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger,.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,.mCS-rounded.mCSB_scrollTools .mCSB_dragger {
+ height:14px
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:14px;
+ margin:0 1px
+}
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger,.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger,.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger,.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger {
+ width:14px
+}
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ height:14px;
+ margin:1px 0
+}
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+ width:16px;
+ height:16px;
+ margin:-1px 0
+}
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ width:4px
+}
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+ height:16px;
+ width:16px;
+ margin:0 -1px
+}
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ height:4px;
+ margin:6px 0
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:0 -72px
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:0 -92px
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:0 -112px
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:0 -128px
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.15)
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-80px -72px
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-80px -92px
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-80px -112px
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-80px -128px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools_vertical .mCSB_draggerRail,.mCS-rounded-dots.mCSB_scrollTools_vertical .mCSB_draggerRail {
+ width:4px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ background-color:transparent;
+ background-position:center
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail {
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==);
+ background-repeat:repeat-y;
+ opacity:.3;
+ filter:"alpha(opacity=30)";
+ -ms-filter:"alpha(opacity=30)"
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ height:4px;
+ margin:6px 0;
+ background-repeat:repeat-x
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-16px -72px
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-16px -92px
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-20px -112px
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-20px -128px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=)
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-96px -72px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-96px -92px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-100px -112px
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-100px -128px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-repeat:repeat-y;
+ background-image:-moz-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,.5)),color-stop(100%,rgba(255,255,255,0)));
+ background-image:-webkit-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-o-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-ms-linear-gradient(left,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:linear-gradient(to right,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%)
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ background-repeat:repeat-x;
+ background-image:-moz-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,.5)),color-stop(100%,rgba(255,255,255,0)));
+ background-image:-webkit-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-o-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:-ms-linear-gradient(top,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%);
+ background-image:linear-gradient(to bottom,rgba(255,255,255,.5) 0,rgba(255,255,255,0) 100%)
+}
+.mCS-3d-dark.mCSB_scrollTools_vertical .mCSB_dragger,.mCS-3d.mCSB_scrollTools_vertical .mCSB_dragger {
+ height:70px
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger,.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger {
+ width:70px
+}
+.mCS-3d-dark.mCSB_scrollTools,.mCS-3d.mCSB_scrollTools {
+ opacity:1;
+ filter:"alpha(opacity=30)";
+ -ms-filter:"alpha(opacity=30)"
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_draggerRail {
+ -webkit-border-radius:16px;
+ -moz-border-radius:16px;
+ border-radius:16px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-3d.mCSB_scrollTools .mCSB_draggerRail {
+ width:8px;
+ background-color:#000;
+ background-color:rgba(0,0,0,.2);
+ box-shadow:inset 1px 0 1px rgba(0,0,0,.5),inset -1px 0 1px rgba(255,255,255,.2)
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#555
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:8px
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-3d.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:8px;
+ margin:4px 0;
+ box-shadow:inset 0 1px 1px rgba(0,0,0,.5),inset 0 -1px 1px rgba(255,255,255,.2)
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ width:100%;
+ height:8px;
+ margin:4px auto
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-32px -72px
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-32px -92px
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-40px -112px
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-40px -128px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.1);
+ box-shadow:inset 1px 0 1px rgba(0,0,0,.1)
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ box-shadow:inset 0 1px 1px rgba(0,0,0,.1)
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-112px -72px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-112px -92px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-120px -112px
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-120px -128px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools,.mCS-3d-thick.mCSB_scrollTools {
+ opacity:1;
+ filter:"alpha(opacity=30)";
+ -ms-filter:"alpha(opacity=30)"
+}
+.mCS-3d-thick-dark.mCSB_scrollTools,.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer,.mCS-3d-thick.mCSB_scrollTools,.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
+ -webkit-border-radius:7px;
+ -moz-border-radius:7px;
+ border-radius:7px
+}
+.mCSB_inside+.mCS-3d-thick-dark.mCSB_scrollTools_vertical,.mCSB_inside+.mCS-3d-thick.mCSB_scrollTools_vertical {
+ right:1px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_vertical,.mCS-3d-thick.mCSB_scrollTools_vertical {
+ box-shadow:inset 1px 0 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal,.mCS-3d-thick.mCSB_scrollTools_horizontal {
+ bottom:1px;
+ box-shadow:inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;
+ box-shadow:inset 1px 0 0 rgba(255,255,255,.4);
+ width:12px;
+ margin:2px;
+ position:absolute;
+ height:auto;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.4);
+ height:12px;
+ width:auto
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#555
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
+ background-color:#000;
+ background-color:rgba(0,0,0,.05);
+ box-shadow:inset 1px 1px 16px rgba(0,0,0,.1)
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:transparent
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-32px -72px
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-32px -92px
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-40px -112px
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-40px -128px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools {
+ box-shadow:inset 0 0 14px rgba(0,0,0,.2)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+ box-shadow:inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.2)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ box-shadow:inset 1px 0 0 rgba(255,255,255,.4),inset -1px 0 0 rgba(0,0,0,.2)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.2)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#777
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+ background-color:#fff;
+ background-color:rgba(0,0,0,.05);
+ box-shadow:inset 1px 1px 16px rgba(0,0,0,.1)
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-minimal.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:transparent
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-112px -72px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-112px -92px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-120px -112px
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-120px -128px
+}
+.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,.mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical {
+ right:0;
+ margin:12px 0
+}
+.mCustomScrollBox.mCS-minimal+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal,.mCustomScrollBox.mCS-minimal+.mCSB_scrollTools.mCSB_scrollTools_horizontal,.mCustomScrollBox.mCS-minimal-dark+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal,.mCustomScrollBox.mCS-minimal-dark+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+ bottom:0;
+ margin:0 12px
+}
+.mCS-dir-rtl>.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,.mCS-dir-rtl>.mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical {
+ left:0;
+ right:auto
+}
+.mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger,.mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger {
+ height:50px
+}
+.mCS-minimal-dark.mCSB_scrollTools_horizontal .mCSB_dragger,.mCS-minimal.mCSB_scrollTools_horizontal .mCSB_dragger {
+ width:50px
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.2);
+ filter:"alpha(opacity=20)";
+ -ms-filter:"alpha(opacity=20)"
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.5);
+ filter:"alpha(opacity=50)";
+ -ms-filter:"alpha(opacity=50)"
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.2);
+ filter:"alpha(opacity=20)";
+ -ms-filter:"alpha(opacity=20)"
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.5);
+ filter:"alpha(opacity=50)";
+ -ms-filter:"alpha(opacity=50)"
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail {
+ width:6px;
+ background-color:#000;
+ background-color:rgba(0,0,0,.2)
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:6px
+}
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:6px;
+ margin:5px 0
+}
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ width:12px
+}
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+ height:12px;
+ margin:2px 0
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-32px -72px
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-32px -92px
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-40px -112px
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-40px -128px
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.1)
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-112px -72px
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-112px -92px
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-120px -112px
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-120px -128px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset.mCSB_scrollTools .mCSB_draggerRail {
+ width:12px;
+ background-color:#000;
+ background-color:rgba(0,0,0,.2)
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ width:6px;
+ margin:3px 5px;
+ position:absolute;
+ height:auto;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0
+}
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,.mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+ height:6px;
+ margin:5px 3px;
+ position:absolute;
+ width:auto;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0
+}
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,.mCS-inset.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+ width:100%;
+ height:12px;
+ margin:2px 0
+}
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp,.mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp,.mCS-inset.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-32px -72px
+}
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown,.mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown,.mCS-inset.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-32px -92px
+}
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonLeft,.mCS-inset-3.mCSB_scrollTools .mCSB_buttonLeft,.mCS-inset.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-40px -112px
+}
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonRight,.mCS-inset-3.mCSB_scrollTools .mCSB_buttonRight,.mCS-inset.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-40px -128px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.1)
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonUp,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonUp,.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonUp {
+ background-position:-112px -72px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonDown,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonDown,.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonDown {
+ background-position:-112px -92px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonLeft,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonLeft,.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonLeft {
+ background-position:-120px -112px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonRight,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonRight,.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonRight {
+ background-position:-120px -128px
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#fff;
+ border-color:rgba(255,255,255,.2);
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+ border-color:#000;
+ border-color:rgba(0,0,0,.2)
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.6)
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+ background-color:#000;
+ background-color:rgba(0,0,0,.6)
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.75)
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.85)
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#000;
+ background-color:rgba(0,0,0,.9)
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.75)
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.85)
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+ background-color:#fff;
+ background-color:rgba(255,255,255,.9)
+}
+
+.mCustomScrollbar .mCustomScrollBox > .mCSB_container{
+    margin-right: 30px;
+}
+.flex{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content:center;
+}
+
+
+/*detail page*/
+.detail_box{
+  background:#fff;
+}
+.main_head{
+  text-align: center;
+  padding:50px 0 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.video_bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+  padding-bottom: 62px;
+}
+.main_head p{
+  color: #fff;
+}
+.detail_box p{
+  margin-top: 10px;
+}
+.detail_box .leftbox p{
+  margin-right:10%;
+  padding:15px 0 12px;
+}
+/*.icon_box_line .dg-line12 .plus{
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+
+}
+.icon_box_line .dg-line12 .plus:before{
+  width: 11px;
+  margin: -1px 0 0 -5px;
+  height: 1px;
+}
+.icon_box_line .dg-line12 .plus:after{
+  height: 11px;
+  margin: -6px 0 0 0px;
+  width: 1px;
+}*/
+
+
+.icon_box_line .dg-line12:before{
+  margin-right:40px;
+  width: 22.5%;
+  background:#EAEAEA;
+}
+.icon_box_line .dg-line12:after{
+  margin-left:40px;
+  width: 22.5%;
+  background:#EAEAEA;
+}
+.icon_box_line .dg-line12{
+  margin:60px 0 23px;
+}
+.icon_box_line h2{
+  margin:3px 0 59px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #595959;
+}
+.detail_box h3.detail_title{
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #686868;
+}
+.detail_box .main_head [class*="dg-btn-"],
+.detail_box .leftbox [class*="dg-btn-"],
+.detail_box h3.detail_title{
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #686868;
+}
+.detail_box .main_head [class*="dg-btn-"],
+.detail_box .leftbox [class*="dg-btn-"]{
+	color: #fff;
+}
+
+.detail_box ul{
+  padding:0;
+  margin:0;
+}
+.detail_box ul.playgame_attribute{
+  margin-bottom: 40px;
+  margin-top:20px;
+}
+.detail_box ul.playgame_attribute li.font_icon div.label_name{
+	font-size: 18px;
+}
+.detail_box ul.playgame_attribute li{
+  list-style: none;
+  background:#F4F4F4;
+}
+.detail_box ul.playgame_attribute li .label{
+  color: #666;
+}
+
+.detail_box ul.playgame_attribute li .label span{
+  padding-left: 0px;
+}
+.detail_box h3.detail_title.ml-80{
+  margin-left: 0px !important;
+}
+.detail_box ul.playgame_attribute li:nth-child(2n){
+  background: #fff;
+}
+.detail_box ul.playgame_attribute li{
+  display: flex;
+  align-items:center;
+}
+.detail_box ul.playgame_attribute li > div{
+  width: 50%;
+  text-align: left;
+  font-size: 14px;
+  padding:8px 6px;
+  line-height: 14px
+}
+
+.flag-wrapper {
+  width: 18px;
+  height: 14px;
+  float: left;
+  margin-right: 4px;
+  margin-bottom: 4.5px;
+  margin-top:4.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flag-wrapper .flag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+
+.pro-img-list.numbercolumns-1  li{ width:100.000% }
+.pro-img-list.numbercolumns-2  li{ width:50.0000% }
+.pro-img-list.numbercolumns-3  li{ width:33.3333% }
+.pro-img-list.numbercolumns-4  li{ width:25.0000% }
+.pro-img-list.numbercolumns-5  li{ width:20.0000% }
+.pro-img-list.numbercolumns-6  li{ width:16.6666% }
+.pro-img-list.numbercolumns-7  li{ width:14.2857% }
+.pro-img-list.numbercolumns-8  li{ width:12.5000% }
+.pro-img-list.numbercolumns-9  li{ width:11.1111% }
+.pro-img-list.numbercolumns-10 li{ width:10.0000% }
+.pro-img-list.numbercolumns-11 li{ width:9.09090% }
+.pro-img-list.numbercolumns-12 li{ width:8.33333% }
+.pro-img-list.numbercolumns-13 li{ width:7.69230% }
+.pro-img-list.numbercolumns-14 li{ width:7.14285% }
+.pro-img-list.numbercolumns-15 li{ width:6.66666% }
+.pro-img-list.numbercolumns-16 li{ width:6.25000% }
+.pro-img-list.numbercolumns-17 li{ width:5.88235% }
+.pro-img-list.numbercolumns-18 li{ width:5.55555% }
+.pro-img-list.numbercolumns-19 li{ width:5.26315% }
+.pro-img-list.numbercolumns-20 li{ width:5.00000% }
+
+@media only screen and (min-width: 1200px) {
+  .pro-img-list.numberLarge-1  li{ width:100.000% }
+  .pro-img-list.numberLarge-2  li{ width:50.0000% }
+  .pro-img-list.numberLarge-3  li{ width:33.3333% }
+  .pro-img-list.numberLarge-4  li{ width:25.0000% }
+  .pro-img-list.numberLarge-5  li{ width:20.0000% }
+  .pro-img-list.numberLarge-6  li{ width:16.6666% }
+  .pro-img-list.numberLarge-7  li{ width:14.2857% }
+  .pro-img-list.numberLarge-8  li{ width:12.5000% }
+  .pro-img-list.numberLarge-9  li{ width:11.1111% }
+  .pro-img-list.numberLarge-10 li{ width:10.0000% }
+  .pro-img-list.numberLarge-11 li{ width:9.09090% }
+  .pro-img-list.numberLarge-12 li{ width:8.33333% }
+  .pro-img-list.numberLarge-13 li{ width:7.69230% }
+  .pro-img-list.numberLarge-14 li{ width:7.14285% }
+  .pro-img-list.numberLarge-15 li{ width:6.66666% }
+  .pro-img-list.numberLarge-16 li{ width:6.25000% }
+  .pro-img-list.numberLarge-17 li{ width:5.88235% }
+  .pro-img-list.numberLarge-18 li{ width:5.55555% }
+  .pro-img-list.numberLarge-19 li{ width:5.26315% }
+  .pro-img-list.numberLarge-20 li{ width:5.00000% }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pro-img-list.numbertablet-1  li{ width:100.000% }
+  .pro-img-list.numbertablet-2  li{ width:50.0000% }
+  .pro-img-list.numbertablet-3  li{ width:33.3333% }
+  .pro-img-list.numbertablet-4  li{ width:25.0000% }
+  .pro-img-list.numbertablet-5  li{ width:20.0000% }
+  .pro-img-list.numbertablet-6  li{ width:16.6666% }
+  .pro-img-list.numbertablet-7  li{ width:14.2857% }
+  .pro-img-list.numbertablet-8  li{ width:12.5000% }
+  .pro-img-list.numbertablet-9  li{ width:11.1111% }
+  .pro-img-list.numbertablet-10 li{ width:10.0000% }
+  .pro-img-list.numbertablet-11 li{ width:9.09090% }
+  .pro-img-list.numbertablet-12 li{ width:8.33333% }
+  .pro-img-list.numbertablet-13 li{ width:7.69230% }
+  .pro-img-list.numbertablet-14 li{ width:7.14285% }
+  .pro-img-list.numbertablet-15 li{ width:6.66666% }
+  .pro-img-list.numbertablet-16 li{ width:6.25000% }
+  .pro-img-list.numbertablet-17 li{ width:5.88235% }
+  .pro-img-list.numbertablet-18 li{ width:5.55555% }
+  .pro-img-list.numbertablet-19 li{ width:5.26315% }
+  .pro-img-list.numbertablet-20 li{ width:5.00000% }
+}
+@media only screen and (max-width: 767px) {
+  .pro-img-list.numberphone-1  li{ width:100.000% }
+  .pro-img-list.numberphone-2  li{ width:50.0000% }
+  .pro-img-list.numberphone-3  li{ width:33.3333% }
+  .pro-img-list.numberphone-4  li{ width:25.0000% }
+  .pro-img-list.numberphone-5  li{ width:20.0000% }
+  .pro-img-list.numberphone-6  li{ width:16.6666% }
+  .pro-img-list.numberphone-7  li{ width:14.2857% }
+  .pro-img-list.numberphone-8  li{ width:12.5000% }
+  .pro-img-list.numberphone-9  li{ width:11.1111% }
+  .pro-img-list.numberphone-10 li{ width:10.0000% }
+  .pro-img-list.numberphone-11 li{ width:9.09090% }
+  .pro-img-list.numberphone-12 li{ width:8.33333% }
+  .pro-img-list.numberphone-13 li{ width:7.69230% }
+  .pro-img-list.numberphone-14 li{ width:7.14285% }
+  .pro-img-list.numberphone-15 li{ width:6.66666% }
+  .pro-img-list.numberphone-16 li{ width:6.25000% }
+  .pro-img-list.numberphone-17 li{ width:5.88235% }
+  .pro-img-list.numberphone-18 li{ width:5.55555% }
+  .pro-img-list.numberphone-19 li{ width:5.26315% }
+  .pro-img-list.numberphone-20 li{ width:5.00000% }
+}
+
+.gamefeatures li {
+  float:left;
+  list-style:none;
+  position:relative;
+  z-index:1;
+  text-align: center;
+}
+.gamefeatures li img{
+  max-width:100%;
+  vertical-align:middle;
+  width: 100%;
+}
+.gamefeatures .clear{
+  clear:both;
+  width:100%;
+  height:0;
+  overflow:hidden;
+  float:none;
+  
+}
+.gamefeatures li a span{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  padding:15px 0 10px;
+  font-weight: bold;
+}
+.gamefeatures li a{
+  color: #666;
+  display: block;
+}
+
+.video_box.icon_box_line h2{
+  margin-top: 17px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mobile_btn{
+    display: none !important;
+  }
+  }
+@media only screen and (max-width: 1024px) {
+  .desktop_btn{
+    display: none !important;
+  }
+  .detail_img img{
+      max-width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 1600px) {
+   .detail_box h3.detail_title.ml-80 {
+    margin-left: 86px !important;
+}
+  .detail_box ul.playgame_attribute li .label span {
+    padding-left: 80px !important;
+}
+	.detail_box ul.playgame_attribute li > div.label_name{
+		padding-right: 80px !important
+	}
+}
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+  .detail_box h3.detail_title.ml-80 {
+    margin-left: 86px !important;
+}
+  .detail_box ul.playgame_attribute li .label span {
+    padding-left: 80px !important;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.playgame_attribute .logolist .label_name span{
+ 		width: 100%;
+ 	}
+   .detail_box h3.detail_title.ml-80 {
+    margin-left: 0px !important;
+}
+  .detail_box ul.playgame_attribute li .label span {
+    padding-left: 0px !important;
+}
+.detail_box ul.playgame_attribute li > div.label{
+  width: 60%;
+}
+.detail_box ul.playgame_attribute li > div.label_name{
+  width: 40%;
+}
+
+}
+ @media only screen and (max-width: 767px) {
+ 	.playgame_attribute .logolist .label_name span{
+ 		width: 100%;
+ 	}
+ 	.gamefeatures .photo_list .owl-nav .owl-prev:after,
+ 	.gamefeatures .photo_list .owl-nav .owl-next:after{
+	display: none;
+ 	}
+   .detail_box h3.detail_title.ml-80 {
+    margin-left: 0px !important;
+}
+  .detail_box ul.playgame_attribute li .label span {
+    padding-left: 0px !important;
+}
+  .detail_box .rightbox .detail_title{
+    margin-top: 20px;}
+   
+    [class*="dg-btn-"].radius-3px{
+      display: block;
+      text-align: center;
+    }
+    .main_head{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .video_bg{
+      background:none !important;
+      padding-bottom: 30px;
+    }
+    .gamefeatures li a span{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .detail_box .leftbox p{
+      margin-right: 0px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .detail_box .leftbox [class*="dg-btn-"].radius-3px{
+      margin-bottom: 15px;
+    }
+    .detail_box h3.detail_title{
+      text-align: center;
+    }
+    .dg-line12{
+      overflow: hidden;
+    }
+    .dg-line12:before, .dg-line12:after{
+      width: 100% !important;
+    }
+    /*.detail_box > .container{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .icon_box_line{
+      padding-left: 15px;
+      padding-right: 15px;
+    }*/
+    .video_box.icon_box_line h2{
+      color: #595959;
+    }
+}
+
+
+.detail_box .owl-carousel .owl-stage .dg-imagebox .pic{
+	position: relative;
+}
+.detail_box .owl-carousel .owl-stage .dg-imagebox .pic > a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.detail_box .owl-carousel .owl-stage .dg-imagebox .pic .relation_title{
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	padding:8px 0;
+	line-height: 18px;
+}
+
+
+.detail_box .owl-carousel .owl-nav .owl-prev,
+.detail_box .owl-carousel .owl-nav .owl-next,
+.detail_box .owl-carousel .owl-nav .owl-prev:hover,
+.detail_box .owl-carousel .owl-nav .owl-next:hover{
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+    background-color:transparent;
+}
+.detail_box .owl-carousel .owl-nav .owl-prev:hover:after,
+.detail_box .owl-carousel .owl-nav .owl-next:hover:after{
+	border-color:#008ad3;
+}
+.detail_box .owl-carousel .owl-nav .owl-prev:after{
+	width:27px;
+	height:27px;
+	margin:-13px 0 0 -8px;
+	border-color:#008ad3;
+} 
+.detail_box .owl-carousel .owl-nav .owl-next:after{
+	width:27px;
+	height:27px;
+	margin:-13px 0 0 -20px;
+	border-color:#008ad3;
+}
+
+@media only screen and (max-width: 1599px){
+	.detail_box .owl-carousel .owl-nav .owl-prev{
+		left: 5px;
+	}
+.detail_box .owl-carousel .owl-nav .owl-next{
+	right:5px;
+}
+.detail_box .owl-carousel .owl-nav .owl-prev:after{
+	border-color:#fff;
+} 
+.detail_box .owl-carousel .owl-nav .owl-next:after{
+	border-color:#fff;
+}
+}
+
+
+.detail_box{
+	padding-bottom:20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.no_before{
+		width: 20px !important;
+		height: 19px !important;
+	}
+	}
+@media only screen and (max-width: 330px){
+	.detail_box ul.playgame_attribute li > div.label{
+		font-size: 11px !important
+	}
+}
+
+
+.customization .mfp_popup_game{
+  background-color: transparent;
+  padding:0px;
+  position: relative !important;
+}
+.customization .mfp-content{
+  width: 100%;
+  padding: 0;
+  max-width:1050px !important;
+}
+.customization .mfp-iframe-scaler{
+  padding-top: 0;
+  padding-left:0;
+  padding-right: 0;
+}
+
+.relation-list{
+  padding: 35px 0 0
+}
+.relation-list .item{
+  padding: 15px 35px;
+  text-align: center;
+}
+.relation-list .relation_title{
+  display: block;
+  padding: 10px 0;
+  color: #FFF;
+  text-decoration: none!important;
+}
+.relation-list a{
+  text-decoration: none!important;
+}
+
+.relation-list:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 -1000px ;
+  z-index: -1;
+}
+
+.relation-list::after{
+  content: "Related Games";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 18px;
+}
+
+
+
+.mfp-container.mfp-inline-holder{
+  overflow: hidden;
+}
+
+.owl-carousel.relation-list .owl-nav .owl-prev,
+.owl-carousel.relation-list .owl-nav .owl-next{
+  border-radius: 0!important;
+  background: none!important;
+}
+.owl-carousel.relation-list .owl-nav .owl-prev:after, 
+.owl-carousel.relation-list .owl-nav .owl-next:after{
+  width: 27px!important;;
+  height: 27px!important;;
+  margin: -13px 0 0 -13px!important;;
+  border-color: #fff!important;;
+}
+.owl-carousel.relation-list .owl-nav .owl-prev:before, 
+.owl-carousel.relation-list .owl-nav .owl-next:before{
+  content:none!important;
+}
+.owl-carousel.relation-list .owl-item img {
+  border: 3px solid transparent;
+}
+.owl-carousel.relation-list .owl-item.play img {
+  border-color:#20a3fc;
+}
+
+.owl-carousel.relation-list {
+  display: block;
+}
+.owl-carousel.relation-list .item{
+  width: 25%;
+  float: left;
+}
+.owl-carousel.relation-list .owl-item .item{
+  width:auto;
+  float: none;
+}
+
+
+.owl-carousel.relation-list,
+.relation-list:before {
+  height:302px;
+}
+.owl-carousel.relation-list img {
+  max-height:192px;
+}
+@media only screen and (min-width: 1340px) and (max-width: 1440px) {
+
+	.relation-list .item{
+		padding:15px 5px;
+	}
+  .owl-carousel.relation-list,
+  .relation-list:before{
+    height: 236px;
+  }
+ .owl-carousel.relation-list img {
+  max-height: 125px;
+  }
+  
+}
+@media only screen and (min-width: 1240px) and (max-width: 1340px) {
+	.mfp_popup_game{
+		max-width: 85%;
+	}
+	.relation-list .item{
+		padding:15px 5px;
+	}
+  .owl-carousel.relation-list,
+  .relation-list:before{
+    height: 215px;
+  }
+ .owl-carousel.relation-list img {
+  max-height: 106px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1239px) {
+	.mfp_popup_game{
+		max-width: 75%;
+	}
+	.relation-list .item{
+		padding:15px 5px;
+  }
+  .owl-carousel.relation-list,
+  .relation-list:before{
+    height: 203px;
+  }
+  .owl-carousel.relation-list img {
+    max-height: 93px;
+  }
+}
+@media only screen and (max-width: 780px)  {
+  .owl-carousel.relation-list img {
+    max-height: 170px;
+  }
+}
+.mfp-container.mfp-inline-holder{
+  white-space: nowrap;
+}
+.mfp-container.mfp-inline-holder > div{
+  white-space: normal;
+}
+
+
+/*@media only screen and (min-width: 1800px) and (max-width: 1980px) {
+	.mfp_popup_game{
+		max-width: 50%;
+	}
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+	.mfp_popup_game{
+		max-width: 48%;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+	.mfp_popup_game{
+		max-width: 46%;
+		padding:15px 5px;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.mfp_popup_game{
+		max-width: 45%;
+	}
+	.relation-list .item{
+		padding:15px 5px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	.mfp_popup_game{
+		max-width: 55%;
+	}
+	.relation-list .item{
+		padding:15px 5px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.owl-carousel.relation-list .owl-item img{
+		max-width: 50%;
+	}
+}*/
+
+ 

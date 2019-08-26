@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGalleryProGame>
+  <Settings>
+	  <Setting>
+		  <Name><![CDATA[Title]]></Name>
+		  <Alias><![CDATA[Name]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[TextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[True]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting>
+	  <Setting>
+		  <Name><![CDATA[Gid]]></Name>
+		  <Alias><![CDATA[Gid]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[TextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[True]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting>
+	  <Setting>
+		  <Name><![CDATA[Description]]></Name>
+		  <Alias><![CDATA[Description]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[TextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[False]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting> 
+	  
+	<Setting>
+	   <Name><![CDATA[Displayupdatedate]]></Name>
+	   <Alias><![CDATA[Display Publish Time]]></Alias>
+	   <Width><![CDATA[100]]></Width>
+	   <Rows><![CDATA[1]]></Rows>
+	   <DefaultValue><![CDATA[True]]></DefaultValue>
+	   <ControlType><![CDATA[CheckBox]]></ControlType>
+	   <Direction><![CDATA[Vertical]]></Direction>
+	   <ListContent><![CDATA[]]></ListContent>
+	   <Description><![CDATA[]]></Description>
+	   <Required><![CDATA[False]]></Required>
+	  <Verification><![CDATA[integer]]></Verification>
+	  <Group><![CDATA[]]></Group>
+	</Setting> 
+
+  	  <Setting>
+		  <Name><![CDATA[Summary]]></Name>
+		  <Alias><![CDATA[Summary]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[10]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[RichTextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[False]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting>  
+	  
+	<Setting> 
+		<Name><![CDATA[Picture]]></Name>  
+		<Alias><![CDATA[Thumbnail]]></Alias>  
+		<Width><![CDATA[250]]></Width>  
+		<Rows><![CDATA[1]]></Rows>  
+		<DefaultValue><![CDATA[]]></DefaultValue>  
+		<ControlType><![CDATA[Urls]]></ControlType>  
+		<Direction><![CDATA[Vertical]]></Direction>  
+		<ListContent><![CDATA[U,F]]></ListContent>  
+		<Description><![CDATA[]]></Description>  
+		<Required><![CDATA[True]]></Required>  
+		<Verification><![CDATA[optional]]></Verification>  
+    <Group><![CDATA[]]></Group>
+    <Categories><![CDATA[]]></Categories>
+    <Layout><![CDATA[Left]]></Layout>
+	</Setting>  
+	
+		<Setting>
+			<Name><![CDATA[LargeImage]]></Name>
+			<Alias><![CDATA[Large Image]]></Alias>
+			<Width><![CDATA[250]]></Width>
+			<Rows><![CDATA[1]]></Rows>
+			<DefaultValue><![CDATA[z1]]></DefaultValue>
+			<ControlType><![CDATA[DropDownList]]></ControlType>
+			<Direction><![CDATA[Vertical]]></Direction>
+			<ListContent><![CDATA[Square:z1|Rect Horizontal:w2|Rect Vertical:h2|Big Square:z2]]></ListContent>
+			<Description><![CDATA[]]></Description>
+			<Required><![CDATA[False]]></Required>
+			<Verification><![CDATA[]]></Verification>
+			<Group><![CDATA[]]></Group>
+			<Categories><![CDATA[]]></Categories>
+			<Layout><![CDATA[]]></Layout>
+		</Setting>
+	<Setting> 
+		<Name><![CDATA[MoreLink]]></Name>  
+		<Alias><![CDATA[More Link]]></Alias>  
+		<Width><![CDATA[250]]></Width>  
+		<Rows><![CDATA[1]]></Rows>  
+		<DefaultValue><![CDATA[]]></DefaultValue>  
+		<ControlType><![CDATA[Urls]]></ControlType>  
+		<Direction><![CDATA[Vertical]]></Direction>  
+		<ListContent><![CDATA[U,F]]></ListContent>  
+		<Description><![CDATA[]]></Description>  
+		<Required><![CDATA[False]]></Required>  
+		<Verification><![CDATA[optional]]></Verification>  
+		<Group><![CDATA[]]></Group>  
+		<Categories><![CDATA[]]></Categories>  
+		<Layout><![CDATA[Left]]></Layout> 
+	</Setting> 
+		
+		<Setting> 
+		<Name><![CDATA[BackDrop]]></Name>  
+		<Alias><![CDATA[BackDrop]]></Alias>  
+		<Width><![CDATA[250]]></Width>  
+		<Rows><![CDATA[1]]></Rows>  
+		<DefaultValue><![CDATA[]]></DefaultValue>  
+		<ControlType><![CDATA[Urls]]></ControlType>  
+		<Direction><![CDATA[Vertical]]></Direction>  
+		<ListContent><![CDATA[U,F]]></ListContent>  
+		<Description><![CDATA[]]></Description>  
+		<Required><![CDATA[True]]></Required>  
+		<Verification><![CDATA[optional]]></Verification>  
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	</Setting>  
+	 <Setting>
+		  <Name><![CDATA[RTP]]></Name>
+		  <Alias><![CDATA[RTP]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[TextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[True]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting>  
+		 <Setting>
+		  <Name><![CDATA[YoutubeId]]></Name>
+		  <Alias><![CDATA[Youtube Id]]></Alias>
+		  <Width><![CDATA[300]]></Width>
+		  <Rows><![CDATA[1]]></Rows>
+		  <DefaultValue><![CDATA[]]></DefaultValue>
+		  <ControlType><![CDATA[TextBox]]></ControlType>
+		  <Direction><![CDATA[Vertical]]></Direction>
+		  <ListContent><![CDATA[]]></ListContent>
+		  <Description><![CDATA[]]></Description>
+		  <Required><![CDATA[False]]></Required>
+		  <Verification><![CDATA[optional]]></Verification>
+		  <Group><![CDATA[]]></Group>
+		  <Categories><![CDATA[]]></Categories>
+		  <Layout><![CDATA[Left]]></Layout>
+	  </Setting>  
+  
+		<Setting>
+			<Name><![CDATA[GameRegulators]]></Name>
+			<Alias><![CDATA[Game Regulators]]></Alias>
+			<Width><![CDATA[250]]></Width>
+			<Rows><![CDATA[1]]></Rows>
+			<DefaultValue><![CDATA[]]></DefaultValue>
+			<ControlType><![CDATA[CheckBoxList]]></ControlType>
+			<Direction><![CDATA[Horizontal]]></Direction>
+			<ListContent><![CDATA[aams|agcc|dga|lga|ukgc]]></ListContent>
+			<Description><![CDATA[]]></Description>
+			<Required><![CDATA[False]]></Required>
+			<Verification><![CDATA[]]></Verification>
+			<Group><![CDATA[]]></Group>
+			<Categories><![CDATA[]]></Categories>
+			<Layout><![CDATA[]]></Layout>
+		</Setting>
+		
+		<Setting> 
+			<Name><![CDATA[DashImage]]></Name>  
+			<Alias><![CDATA[Dash Image]]></Alias>  
+			<Width><![CDATA[250]]></Width>  
+			<Rows><![CDATA[1]]></Rows>  
+			<DefaultValue><![CDATA[]]></DefaultValue>  
+			<ControlType><![CDATA[Urls]]></ControlType>  
+			<Direction><![CDATA[Vertical]]></Direction>  
+			<ListContent><![CDATA[U,F]]></ListContent>  
+			<Description><![CDATA[]]></Description>  
+			<Required><![CDATA[True]]></Required>  
+			<Verification><![CDATA[optional]]></Verification>  
+    		<Group><![CDATA[]]></Group>
+    		<Categories><![CDATA[]]></Categories>
+    		<Layout><![CDATA[Left]]></Layout>
+		</Setting>
+
+
+
+		<Setting>
+			<Name><![CDATA[tablet]]></Name>
+			<Alias><![CDATA[Tablet Game Version]]></Alias>
+			<Width><![CDATA[250]]></Width>
+			<Rows><![CDATA[1]]></Rows>
+			<DefaultValue><![CDATA[mobile]]></DefaultValue>
+			<ControlType><![CDATA[DropDownList]]></ControlType>
+			<Direction><![CDATA[Vertical]]></Direction>
+			<ListContent><![CDATA[Mobile:mobile|Desktop:desktop]]></ListContent>
+			<Description><![CDATA[]]></Description>
+			<Required><![CDATA[False]]></Required>
+			<Verification><![CDATA[]]></Verification>
+			<Group><![CDATA[]]></Group>
+			<Categories><![CDATA[]]></Categories>
+			<Layout><![CDATA[]]></Layout>
+		</Setting>
+
+
+
+
+  </Settings>
+</DNNGo_DNNGalleryProGame>
+
+
+

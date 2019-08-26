@@ -1,0 +1,821 @@
+﻿
+
+<div id="PlayngoGames${ModuleID}" class="$ThemeName PlayngoGames loading">
+  <div class="game-tags"></div>
+  
+<div class="container">
+<div class="filter_block">
+ <div class="filters">
+   <a href="#premium" class="active" data-type="tag">All</a>
+   #foreach($GroupItem in $GroupList) 
+   <a href="#${xf.ToTrim2($GroupItem.Name)}" data-type="tag" title="$GroupItem.Name">$GroupItem.Name</a>
+   #end  
+   
+   
+ </div>
+  
+  <select class="filters-select">
+  <option value="premium">All</option>
+   #foreach($GroupItem in $GroupList) 
+   <option value="#${xf.ToTrim2($GroupItem.Name)}">$GroupItem.Name</option>
+   #end     
+   </select>
+
+<div class="search_box">
+    <div class="searchBox" id="searchBox">
+      <input name="dnn$dnnSEARCH$txtSearch" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="moduleTextBox" autocomplete="off" placeholder="Search..." type="text">
+      <a id="dnn_dnnSEARCH_cmdSearch" class="search" href="javascript:;"> </a> </div>
+  </div>
+  <ul class="sort_box">
+    <li class="sort">
+      <a class="active" href="#date" data-type="sort">Date</a>
+      <div class="filter-switch "> <span></span></div>
+      <a href="#title" data-type="sort">Title</a></li>
+    <li class="desc_asc">
+      <a href="#desc" class="active" data-type="desc_asc">Desc</a>
+      <div class="filter-switch "><span></span></div>
+      <a href="#asc" data-type="desc_asc">Asc</a></li>
+  </ul>
+  <div style="clear: both;"></div>
+</div>
+</div>
+  
+  <div class="game-main"></div>
+  
+  <div class="text-center" data-type="more"><a class="moremeassage more-game active" href="javascript:;"><span class="fa showloading"></span> MORE</a></div>
+  <div id="" class="mfp_popup_game"> </div>
+  
+</div>
+
+
+
+
+
+<script id="scriptTagLink" type="text/x-jquery-tmpl">
+<a href="#${Tag}" {{if Tag =="premium"}}class="active"{{/if}} data-type="tag">${DisplayName}</a>  
+</script>
+<script id="scriptTagLinkselect" type="text/x-jquery-tmpl">
+<option value="${Tag}">${DisplayName}</option>
+</script>
+
+
+<script id="scriptLanguageLink" type="text/x-jquery-tmpl">
+ <option value="${Code}">${Name}</option>
+</script>
+
+<script id="scriptItemHTML" type="text/x-jquery-tmpl">
+<div class="game-items {{if LargeImage =="w2" || LargeImage =="z2"}}isotope-item-width2{{/if}} {{if LargeImage =="h2" || LargeImage =="z2"}}isotope-item-height2{{/if}}">
+<div class="pro-game-pic img_zoom">
+<div class="img-box" style='background-image: url("{{if PreviewImg == "" }}${MainLogoImg}{{else}}${PreviewImg}{{/if}}")'> </div>
+<div class="pic-info">
+  <h3 class="name">
+    <a href="#${Gid}" data-gid="${Gid}" title="${Name}" data-effect="mfp-zoom-in" class="prolight_Box">
+      ${Name}
+    </a>
+ 
+ </h3>
+  <div class="description">
+    <p>${Description}</p>
+  </div>
+  <div class="flex">
+  <a href="#${Gid}" data-gid="${Gid}" title="${Name}" data-effect="mfp-zoom-in" class="prolight_Box">
+      <span class="play-icon"></span>
+      TRY IT
+    </a>
+    <a title="GAME INFO" href="${Url}" >
+      <span class="play-icon"></span>
+      GAME INFO
+    </a>
+    </div>
+  
+</div>
+</div>
+</div>
+</script>
+<script id="scriptItemHTMLMobile" type="text/x-jquery-tmpl">
+<div class="game-items {{if LargeImage =="w2" || LargeImage =="z2"}}isotope-item-width2{{/if}} {{if LargeImage =="h2" || LargeImage =="z2"}}isotope-item-height2{{/if}}">
+<div class="pro-game-pic img_zoom"> 
+<div class="img-box" style='background-image: url("{{if PreviewImg == "" }}${MainLogoImg}{{else}}${PreviewImg}{{/if}}")'> </div>
+<div class="pic-info">
+
+  
+    <h3 class="name">
+    <a href="${MobileUrl}" title="${Name}" data-effect="mfp-zoom-in" >
+      ${Name}
+    </a>
+ </h3>
+  <div class="description">
+    <p>${Description}</p>
+  </div>
+  <div class="flex">
+  <a href="${MobileUrl}" title="${Name}" data-effect="mfp-zoom-in">
+      <span class="play-icon"></span>
+      TRY IT
+    </a>
+    <a title="GAME INFO" href="${Url}" >
+      <span class="play-icon"></span>
+      GAME INFO
+    </a>
+    </div>
+  
+</div>
+</div>
+</div>
+</script>
+
+
+<script id="iframeHTML" type="text/x-jquery-tmpl">
+<div class="game-BackDrop" style='background-image: url("${BackDrop}")'></div>
+ <div class="game-iframe">
+
+ <div class="responsive-video">
+  <div id="flashobject"><span class="loading"><i></i></span></div>
+  </div>  
+</div>
+<a href="${Url}" style="display: none" target="_blank" id="game-close-link"></a>
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  function flashCallback(data){
+      if(data["reason"] == "Exit" || data["id"]  == "logout"){ 
+        $(".mfp-close").click();
+      }
+    }
+
+  function startRowIndex( PageIndex,  PageSize, RecordCount)
+  {
+      //第一页时,行集索引从零开始 || 实际的行数不够分一页时
+      if (PageIndex == 1 || RecordCount <= PageSize) return 0;
+
+      //计算出总页数
+      var MaxPage = RecordCount / PageSize + (RecordCount % PageSize > 0 ? 1 : 0);
+
+      //页数不能超过实际最大页面的判断
+      if (PageIndex > MaxPage) PageIndex = MaxPage;
+
+      //起始值
+      return (PageIndex - 1) * PageSize;
+  }
+
+  function Split(list,  PageIndex,  PageSize)
+  {
+      //总数
+      var RecordCount = list.length;
+      //创建开始索引
+    //  var StartIndex = startRowIndex(PageIndex, PageSize, RecordCount);
+     var StartIndex = jQuery("#PlayngoGames${ModuleID} .game-main .game-items").length;
+
+      //创建结束索引
+      var EndIndex = StartIndex + PageSize - 1;
+      EndIndex = EndIndex < RecordCount ? EndIndex : list.length - 1;//修正结束索引
+
+      var Temp = new Array();
+      for (var i = StartIndex; i <= EndIndex; i++)
+      {
+          Temp.push(list[i]);
+      }
+      return Temp;
+  }
+
+if(typeof(MobileDetect) =="function"){
+var md = new MobileDetect(window.navigator.userAgent),
+  phone = md.phone(),
+  tablet = md.tablet();
+}else{
+  phone = false,
+  tablet =false;
+}
+
+if(typeof ImgLoad !=="function"){
+function ImgLoad(callback,e){
+  var imgdefereds=[];
+
+  e.find('img').each(function(){
+  var dfd=jQuery.Deferred();
+    $(this).bind('load',function(){
+    dfd.resolve();
+
+    }).bind('error',function(){
+    dfd.resolve();
+    })
+    if(this.complete) setTimeout(function(){
+    dfd.resolve();
+    },1000);
+    imgdefereds.push(dfd);
+  })
+  jQuery.when.apply(null,imgdefereds).done(function(){
+  callback();
+  });
+}
+}
+jQuery(document).ready(function () {
+
+  if(phone){
+  var IsMobile = true;
+  }else{
+  var IsMobile = false;
+  }
+
+  var m = jQuery("#PlayngoGames${ModuleID}"),
+          l=m.find(".game-main");
+       //   l.append("<div class=\"game-items isotope_item_width search-val\" data-zoom=\"1\" style=\"height: 0!important;\"></div>")
+
+  var container,
+      t_img,
+      isLoad = true,
+      times=0,
+      n=1,
+      ScrollMaxPage=0,
+      times=0,
+      newitm=true,
+      ScrollMaxPage=0,
+      szie = {
+      MobileSmall : [320,1],
+      Mobile : [479,1],
+      Tablet : [768,2],
+      DesktopSmall : [979,2],
+      Desktop : [1199,4]
+      },
+      itme=4,
+      height=0,
+      i_w=0,
+      col=0;
+   var ratio=${xf.ViewXmlSetting("Height","350")}/${xf.ViewXmlSetting("Width","500")};
+
+      var tagsort =m.data("tag","#premium");
+      var namesort =m.data("sort","#date");
+      var desc_asc =m.data("desc_asc","#desc");
+      var aSearch = [];
+      var index=1;
+      var page =50;
+      var length =0;
+      var lazyload =false;
+      var stops =true;
+      var cuuLanguage="${Module.language}".replace("-","_");
+  
+
+
+
+//isotope-item-width2   //isotope-item-height2
+
+  function responsive(list){
+    w=$(window).width();
+    if(w<=szie.MobileSmall[0]){
+       col = szie.MobileSmall[1];
+    }else if(w<=szie.Mobile[0]){
+       col = szie.MobileSmall[1];
+    }else if(w<=szie.Tablet[0]){
+       col = szie.Tablet[1];
+    }else if(w<=szie.DesktopSmall[0]){
+       col = szie.DesktopSmall[1];
+    }else if(w<=szie.Desktop[0]){
+       col = szie.Desktop[1];
+    }else{
+       col = itme;
+    }
+    i_w =100/col;
+    
+    mx= m.width() % col ;
+    l.css("margin-right",mx!==0?mx-col:0 );
+  
+    m.css("min-height",$(window).height())
+    
+    height = parseInt((m.width()*i_w)/100 * ratio);
+    list.width(i_w+"%").height(height);
+    if(col>2){
+      list.each(function(){
+        if($(this).hasClass("isotope-item-width2") ){
+          $(this).width( Math.min(i_w*2,100)+"%")
+        }
+        if($(this).hasClass("isotope-item-height2")){
+          $(this).height(height*2)
+        }
+      })
+    }else if(col==2){
+      list.each(function(){
+       // if($(this).hasClass("isotope-item-width2") ){
+       //   $(this).width( Math.min(i_w*2,100)+"%")
+       // }
+        if($(this).hasClass("isotope-item-width2") && !$(this).hasClass("isotope-item-height2")){
+          $(this).height(height*0.5)
+        }
+      })
+    }
+  }
+
+//  $("body").on("click",".mfp-close",function(){
+
+// window.open($("#game-close-link").attr("href"));
+//  });
+
+
+
+  function replaceParamVal(oUrl,paramName,replaceWith) {  
+      var re=eval('/('+ paramName+'=)([^&]*)/gi'); 
+      var nUrl = oUrl.replace(re,paramName+'='+replaceWith);
+      return nUrl;
+  }  
+ 
+      var data = [#foreach($SliderItem in $SliderList)#if(${velocityCount}!=1),#end{"Url":"${xf.GoUrl($SliderItem)}","Name": "${xf.String2Json(${xf.ViewSliderSetting($SliderItem,"Title","")})}","Description": "${xf.String2Json(${xf.ViewSliderSetting($SliderItem,"Description","")})}","Gid": "${xf.String2Json(${xf.ViewSliderSetting($SliderItem,"Gid","")})}",  "PreviewImg":"${xf.PictureUrl($SliderItem,"Picture","")}","MainLogoImg":"${xf.PictureUrl($SliderItem,"MainLogo","")}","ReleaseDate":"${SliderItem.StartTime.ToString("yyyy-MM-ddTHH:mm:ss")}","GameTags":"${xf.ToGroups($SliderItem)}","LargeImage":"${xf.ViewSliderSetting($SliderItem,"LargeImage","")}", "BackDrop":"${xf.PictureUrl($SliderItem,"BackDrop","")}","GameLinkDesktop":"${xf.ViewSliderSetting($SliderItem,"GameLinkDesktop","")}","GameLinkMobile":"${xf.ViewSliderSetting($SliderItem,"GameLinkMobile","")}","tablet":"${xf.ViewSliderSetting($SliderItem,"tablet","mobile")}","id":"$SliderItem.ID","sort":"$SliderItem.sort","relation":"#foreach($RelationItem in ${xf.GetRelationIDs($SliderItem)})${RelationItem} #end"}#end];
+    
+
+var GameList =[];
+var GameTags = [];
+var TagKeys = [];
+
+jQuery.each( data, function(i, item){
+
+  if(item.Gid == "bookofdead" || item.Gid == "bookofdeadmobile" || item.Gid == "bohemiajoker" || item.Gid == "bohemiajokermobile"){
+  delete data[i];
+  return;
+  }
+
+  if(IsMobile || (tablet && item["tablet"] =="mobile" )){
+    if(item["GameLinkMobile"] == ""){
+        item["MobileUrl"]="https://showcase.playngo.com/Casino/PlayMobile?pid=2&gid="+item["Gid"]+"&ctx=AllGames&lang="+cuuLanguage+"&practice=1&lobby=http%3A%2F%2Fwww.playngo.com%2FGames"; 
+    }else{
+        item["MobileUrl"]=item["GameLinkMobile"]; 
+    }
+  }else{        
+    if (item["GameLinkDesktop"] == "") {
+        item["MobileUrl"]="https://showcase.playngo.com/Casino/PlayMobile?pid=2&gid="+item["Gid"]+"mobile&ctx=AllGames&lang="+cuuLanguage+"&practice=1&lobby=http%3A%2F%2Fwww.playngo.com%2FGames";
+    }else{
+        item["MobileUrl"]=item["GameLinkDesktop"];
+    }
+
+    if(item.Type=="mobile"){
+    delete data[i];
+    return;
+  }
+  }
+  if(item["GameTags"]){
+    item["GameTagsArray"] =item["GameTags"].trim().split(" ");
+  }
+   var GameTags = item["GameTags"];
+
+   item["GameTags"] =[{
+  "Tag": "premium",
+  "DisplayName": "All"
+  }]
+
+
+
+  if(GameTags!=""){ 
+  jQuery.each( GameTags.split(" "), function(x, tag){
+    if(tag){
+      var tag = {
+        Tag:tag,
+        DisplayName :tag
+      };
+      item.GameTags.push (tag ); 
+    }
+
+  });   
+  }
+
+  GameList.push (item ); 
+
+});
+
+for ( var i = 0; i < data.length; i++ ) { 
+  if ( data[ i ] === undefined ) {
+    data.splice( i, 1 );
+    i--;
+  }
+};
+
+ jQuery.each(GameTags, function(x, tag){
+   m.find(".filters").append(  $("#scriptTagLink").tmpl(tag));
+   m.find(".filters-select").append(  $("#scriptTagLinkselect").tmpl(tag));
+
+ });
+
+   function loadingdata(data){
+      stops=false;
+      var tagsort =m.data("tag").replace("#","");
+      var namesort =m.data("sort");
+      var desc_asc =m.data("desc_asc");
+          aSearch=[];
+           length = 0;
+           index =1;
+           page = 50;
+     
+         var search = m.data("search");
+    
+      
+        data.forEach(function(item){
+          var aTemp = false;
+         if(tagsort != "all"){ 
+          jQuery.each( item.GameTags, function(x, tag){
+            if(tag.Tag === tagsort){
+             aTemp =true;
+            }
+          })
+         }else{
+            aTemp =true;
+         }
+        if(search){
+            if( item.Name.toLowerCase().indexOf(search.toLowerCase())===-1){
+                aTemp =false;
+            }
+          }
+         if(aTemp){
+             aSearch = aSearch.concat(item);
+             length++;
+         } 
+        });
+       
+            
+
+        if(namesort=="#date"){
+          aSearch.sort(DataSort);
+        }else{
+          aSearch.sort(NameSort);
+        }
+        if(desc_asc=="#asc"){
+          aSearch.reverse();
+        }
+     
+       
+        
+       if(length<=page){
+          m.find(".more-game").hide();
+       }else{
+         m.find(".more-game").show();
+       }
+       if(lazyload){
+          l.isotope('remove',m.find(".game-items"));
+       }
+       additme(aSearch,index,page); 
+   
+          
+   }
+   function additme(aSearch,index,page){  
+    var htmlbox = jQuery("<div>");
+        jQuery.each(Split(aSearch,index,page), function(i, item){
+          if(IsMobile || (tablet && item["tablet"] =="mobile" )){
+            htmlbox.append($("#scriptItemHTMLMobile").tmpl(item));
+
+          }else{
+            
+           htmlbox.append($("#scriptItemHTML").tmpl(item));
+          }
+          
+        });  
+     
+        responsive(htmlbox.find(".game-items"));
+     
+        htmlbox.find(".game-items").each(function () {
+          if (!$(this).hasClass("isotope-item-width2")) {
+            $(this).addClass("standard-size");
+            return false;
+          }
+        });
+        if(htmlbox.find(".standard-size").length==0){
+          htmlbox.find(".game-items").eq(0).addClass("standard-size");
+        } 
+     
+     
+         if(lazyload){
+          l.isotope('insert',htmlbox);
+         }else{
+           l.html(htmlbox.html());
+           l.isotope({
+              itemSelector: '.game-items',
+              masonry: {
+                columnWidth: '.standard-size'
+              },
+              percentPosition: true,
+              hiddenStyle: {},
+              visibleStyle: {},
+              transitionDuration: 0,
+            });
+           lazyload=true; 
+         }
+     
+     
+        l.find(".game-items").addClass("animat-order");
+        if(m.find(".game-items").length >= length){
+          m.find(".more-game").hide();
+        }
+        m.find(".prolight_Box").on("click",function(){
+          $(".mfp_popup_game").attr("id",$(this).data("gid"));
+          $(".mfp_popup_game").html("");
+        })
+        mfpAnimation();
+     
+     
+     
+        setTimeout(function(){stops=true;},300);
+   }
+                     
+                   
+   m.find(".more-game").on("click",function(){
+     index++;
+     page=10;
+     additme(aSearch,index,page);     
+   })          
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() >  m.find(".more-game").offset().top && lazyload) {
+       if(m.find(".more-game").css("display")!="none")
+         index++;
+         page=10;
+         additme(aSearch,index,page);     
+      }
+    });
+
+    function NameSort(x,y){
+        return x.Name > y.Name ?1:-1;
+    }    
+    function DataSort(x,y){
+        return x.ReleaseDate < y.ReleaseDate ?1:-1;
+    }    
+
+  function newheight(){
+  //	console.log($(".relation-list").offset().top)
+//		console.log($(window).scrollTop())
+    var boxheight =$(".relation-list").offset().top - $(window).scrollTop();
+    var boxgame = $(".game-iframe");
+    boxgame.css("marginBottom",(boxheight - boxgame.height())/2);
+  }
+
+
+
+  function GameProlightBox(e){
+      var Gid = e.data("gid");
+       jQuery.each( aSearch, function(i, item){
+        if(item.Gid == Gid){ 
+            
+        if(IsMobile || (tablet && item["tablet"] =="mobile" )){
+           if(item["GameLinkMobile"] == ""){
+                        item["MobileUrl"]="https://showcase.playngo.com/Casino/PlayMobile?pid=2&gid="+item["Gid"]+"&ctx=AllGames&lang="+cuuLanguage+"&practice=1&lobby=http%3A%2F%2Fwww.playngo.com%2FGames"; 
+                  }else{
+                        item["MobileUrl"]=item["GameLinkMobile"]; 
+                  }  
+           
+        }else{
+           if (item["GameLinkDesktop"] == "") {
+                          item["MobileUrl"]="https://showcase.playngo.com/Casino/PlayMobile?pid=2&gid="+item["Gid"]+"mobile&ctx=AllGames&lang="+cuuLanguage+"&practice=1&lobby=http%3A%2F%2Fwww.playngo.com%2FGames";
+                  }else{
+                        item["MobileUrl"]=item["GameLinkDesktop"];
+                  }                          
+        }
+
+        $(".mfp_popup_game").append($("#iframeHTML").tmpl(item));
+
+         
+
+        if(item["GameLinkDesktop"]==""){
+          var url = "https://showcase.playngo.com/Casino/js?div=flashobject&gid="+item["Gid"]+"&lang="+cuuLanguage+"&pid=2&demo=2&background=%23000000&practice=1&username=&width=100%&height=100%&callback=flashCallback&_=1517474637677";
+          var scripturl =  $("<script type=\"text/javascript\" src=\""+url+"\"><\/script>");
+        }else{
+          var url = item["GameLinkDesktop"];
+          var scripturl =  $('<iframe src="'+url+'" id="png-game-container" allow="autoplay" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px;"></iframe>');
+        }
+          
+        $(".game-iframe .responsive-video").html("<div id=\"flashobject\"><span class=\"loading\"><i></i></span></div><div class=\"mfp-close no_before\" style=\"bottom:0;top:auto !important;padding:0;margin:0;width:30px;height:25px;\"></div>");
+
+          function sortup(x,y){
+              return y.s-x.s
+          }
+          if(!item.relation && item.GameTagsArray){	
+            var addrelation=[];
+            data.forEach(function(w){
+              item.GameTagsArray.forEach(function(s){
+                if(w.GameTagsArray.indexOf(s)>-1 && w.id != item.id){
+                  addrelation.push({i:w.id,s:w.sort})
+                };
+              })
+            })
+            addrelation.sort(sortup);
+            var new_arr=[],maxlength=0;
+            for(var i=0;i<addrelation.length;i++) {
+            　　var items=addrelation[i].i;
+            　　if(jQuery.inArray(items,new_arr)==-1 &&  maxlength <= ${xf.ViewXmlSetting("RelatedSize",10)} ) {
+            　　　　new_arr.push(items);
+                    maxlength++
+            　　}
+            }   
+            item.relation=new_arr.join(" ");		
+          }	
+    
+            var relation =item.relation.split(" ");
+            var relationhtml = '<div class="relation-list" data-autoplay="true" data-items="4" data-mobile="2" data-tablet="3" data-desktopSmall="4" data-desktop="4" >';
+            for(var x in relation){
+             var relationdata = data.filter(function(p){  return parseInt(p.id) == relation[x];});
+                if(relationdata.length){
+                 
+                 relationhtml += '<div class="item "><div class="dg-imagebox"><div class="pic"><a href="javascript://" data-id="'+relationdata[0].id+'" title="'+relationdata[0].Name+'"><img src="';
+                  if(relationdata[0].MainLogoImg){
+                    relationhtml += relationdata[0].MainLogoImg;
+                  }else{
+                    relationhtml += relationdata[0].PreviewImg;
+                  }
+                relationhtml += '" /><span class="relation_title">'+relationdata[0].Name+'</span></a></div></div></div>';
+                }
+            }    
+           relationhtml += '</div>';
+          
+
+        $("#flashobject").append(scripturl);
+        $(".game-iframe").after(relationhtml);
+      
+      
+    
+      
+
+
+     if($(".relation-list .item").length <= 0){
+          $(".mfp-content").attr("style","vertical-align:middle !important");
+          $(".relation-list").remove();
+       }else{
+          $(".mfp-content").attr("style","vertical-align:bottom !important");
+         
+          $(window).resize(function(){
+            newheight();
+          })
+        // $(window).load(function(){
+        //   newheight();
+        // })
+  //if($(".relation-list .item").length > 3  || ($(window).width()<600 && $(".relation-list .item").length > 2) ){  
+     // ImgLoad(function(){
+
+        $(".relation-list").addClass("owl-carousel").owlCarousel({
+        items : 4,
+        nav :true,
+        dots: false,
+        autoPlay : true,
+        autoHeight : false,
+        stopOnHover : true,
+        loop:true,
+        responsive:{
+                0:{
+                  items:1,
+                },
+                600:{
+                  items:3,
+                },
+                1000:{
+                  items:4,
+                }
+              }
+        });
+
+         $(".relation-list").on("initialize.owl.carousel initialized.owl.carousel",function(){
+           newheight();
+           $(window).resize();
+         })
+         newheight();
+         $(window).resize();
+       }
+         
+     // },$(".relation-list"))
+   // }
+      
+        $(".relation-list").find("a").on("click",function(){
+
+          var id= $(this).data("id");
+          $(this).parents(".owl-item").addClass("play").siblings().removeClass("play")
+          var lookinfo = data.filter(function(p){  return p.id == id;});
+
+          if(lookinfo[0]["GameLinkDesktop"]==""){ 
+            var url = "https://showcase.playngo.com/Casino/js?div=flashobject&gid="+lookinfo[0]["Gid"]+"&lang="+cuuLanguage+"&pid=2&demo=2&background=%23000000&practice=1&username=&width=100%&height=100%&callback=flashCallback&_=1517474637677";
+            var scripturl =  $("<script type=\"text/javascript\" src=\""+url+"\"><\/script>");
+          }else{
+            var url = lookinfo[0]["GameLinkDesktop"];
+            var scripturl =  $('<iframe src="'+url+'" id="png-game-container" allow="autoplay" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px;"></iframe>');
+          }
+          $(".game-iframe .responsive-video").html("<div id=\"flashobject\"><span class=\"loading\"><i></i></span></div><div class=\"mfp-close no_before\" style=\"bottom:0;top:auto !important;padding:0;margin:0;width:30px;height:25px;\"></div>");
+          $("#flashobject").html(scripturl);
+          $(".game-BackDrop").css("background-image","url('"+lookinfo[0]["BackDrop"]+"')")
+        });
+    
+           return false;
+         }
+       });
+
+  }
+    
+    m.on("click",".prolight_Box",function(){
+      GameProlightBox($(this));
+    })
+    
+    
+    m.find(".filter_block a").on("click",function(){
+      if($(this).hasClass("active") && stops) return false;
+          m.data($(this).data("type"),$(this).attr("href"));
+          loadingdata(data);
+          $(this).addClass("active").siblings().removeClass("active");
+          return false;
+    });  
+    m.find(".filter_block .filter-switch").on("click",function(){
+      $(this).siblings("a:not(.active)").click();
+    });
+    m.find(".filter_block .filters-select").on("change",function(){
+      m.data("tag",$(this).val());
+      loadingdata(data);
+    });  
+    
+    var searchTimeout=setTimeout(function(){},400);
+    
+    function searchfunction(e){
+     // if(stops){
+        m.data("search",e.val());
+       if(e.val()){
+         e.siblings(".search").addClass("active");
+        }else{
+        e.siblings(".search").removeClass("active"); 
+        }
+        loadingdata(data);
+    // }
+    }
+    m.find(".moduleTextBox").on("change propertychange keyup",function(){
+      clearTimeout(searchTimeout);
+      var e= $(this);
+     searchTimeout = setTimeout(function(){
+        searchfunction(e);
+      },400)
+     });
+    m.find(".searchBox .search").on("click",function(){
+      if($(this).hasClass("active")){
+        m.find(".searchBox .moduleTextBox").val("") 
+        $(this).removeClass("active");
+          m.data("search","");
+        loadingdata(data);
+      }
+    });
+
+    loadingdata(data);
+    
+    m.removeClass("loading");
+   function hashGid(){
+     var gid = location.hash.replace("#","");
+     var has = false;
+   
+      jQuery.each( data, function(i, item){
+        if(item.Gid == gid ){ 
+          has=true;
+         if($("#"+gid).length===0){
+        
+         if(IsMobile || (tablet && item["tablet"] =="mobile" )){
+        
+           window.location =  $("#scriptItemHTMLMobile").tmpl(item).find("a").eq(0).attr("href") ;
+         
+
+          }else{
+            $("body").append($("#scriptItemHTML").tmpl(item).hide());
+          }
+
+          $("a.prolight_Box[href=\"#"+gid+"\"]").prolight({
+              type: 'inline',
+              fixedContentPos: false,
+              fixedBgPos: true,
+              overflowY: 'auto',
+              closeBtnInside: true,
+              preloader: false,
+              midClick: true,
+              mainClass: 'prolight_zoom_in',
+              callbacks: {
+                beforeOpen: function () {
+                  this.st.mainClass = this.st.el.attr('data-effect') ? this.st.el.attr('data-effect') : "mfp-zoom-in";
+                },
+                close: function() {
+                    $(".mfp_popup_game").html(" ");
+                }
+              },
+              removalDelay: 500,
+              closeOnContentClick: false,
+              closeOnBgClick:false,
+              midClick: true
+            })
+          return false;
+        }
+        }
+       });
+
+       if(has){    
+          $(".mfp_popup_game").attr("id",gid);
+          $(".mfp_popup_game").html("");                 
+          GameProlightBox($("a.prolight_Box[href=\"#"+gid+"\"]").eq(0));
+          $("a.prolight_Box[href=\"#"+gid+"\"]").eq(0).click();
+      }
+    }  
+ 
+if(location.hash){
+  hashGid();
+}
+window.addEventListener('popstate', function(event) {
+  hashGid();
+});
+
+jQuery(window).resize(function() {responsive(m.find(".game-items"));});
+l.find(".game-items").addClass("animat-order");
+
+
+
+});
+</script> 

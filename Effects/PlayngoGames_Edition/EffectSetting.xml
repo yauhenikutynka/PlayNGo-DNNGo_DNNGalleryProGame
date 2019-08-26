@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGalleryProGame>
+  <Settings>
+
+    <Setting>
+      <Name><![CDATA[RelatedSize]]></Name>
+      <Alias><![CDATA[Numbers of the related games]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[items]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Globals]]></Group>
+      <Categories><![CDATA[Globals]]></Categories>
+    </Setting>
+	  
+  </Settings>
+</DNNGo_DNNGalleryProGame>
+
+
+
